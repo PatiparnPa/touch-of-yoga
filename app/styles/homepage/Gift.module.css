@@ -1,0 +1,95 @@
+.giftVocher {
+    display: flex;
+    gap: 20px;
+    /* ช่องว่างระหว่างคอลัมน์ */
+    padding: 50px;
+    /* Add padding for spacing */
+    margin-left: 200px;
+}
+
+.giftTopic {
+    color: black;
+    font-size: 48px;
+}
+
+.giftParagragh {
+    color: #708395;
+    font-size: 16px;
+}
+
+.giftVocher a {
+    color: #3B757F;
+    font-size: 16px;
+}
+
+
+.giftLeftCol {
+    flex: 1;
+}
+
+.giftRightCol {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    /* ช่องว่างระหว่างรูป */
+}
+
+.imageContainer {
+    position: relative;
+    /* กำหนด position เป็น relative เพื่อให้ใช้ overlay ได้ */
+    width: 100%;
+    /* ปรับความกว้างให้เต็ม container */
+    max-width: 300px;
+    /* กำหนดความกว้างสูงสุดของรูป */
+    height: auto;
+    /* รักษาสัดส่วนของรูป */
+    overflow: hidden;
+    /* ซ่อนส่วนเกินของรูป */
+    border-radius: 10px;
+    /* มุมมน */
+    cursor: pointer;
+    /* เปลี่ยน cursor เป็น pointer */
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ให้รูปปรับขนาดตาม container โดยไม่เสียสัดส่วน */
+    transition: transform 0.3s ease;
+    /* เพิ่มการเคลื่อนไหวเวลา hover */
+}
+
+.imageContainer:hover .image {
+    transform: scale(1.1);
+    /* ขยายรูปภาพเมื่อ hover */
+}
+
+.overlay {
+    position: absolute;
+    /* วาง overlay ทับบนรูป */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* สีดำโปร่งใส 50% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* ซ่อน overlay ตอนปกติ */
+    transition: opacity 0.3s ease;
+    /* เพิ่มเอฟเฟกต์เลื่อนเมื่อ hover */
+}
+
+.imageContainer:hover .overlay {
+    opacity: 1;
+    /* แสดง overlay เมื่อ hover */
+}
+
+.overlay span {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
