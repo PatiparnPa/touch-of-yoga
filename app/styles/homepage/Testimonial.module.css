@@ -1,0 +1,105 @@
+.testimonial {
+    text-align: center;
+    padding: 2rem;
+}
+
+.testimonialContainer {
+    display: flex;
+    align-items: center; /* Align items to center */
+    justify-content: center;
+    position: relative;
+}
+
+.arrowButtonLeft,
+.arrowButtonRight {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 40px; /* ขนาดคงที่สำหรับปุ่ม */
+    height: 40px; /* ขนาดคงที่สำหรับปุ่ม */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.arrowButtonLeft:hover,
+.arrowButtonRight:hover {
+    background-color: #f0f0f0;
+}
+
+.testimonialContent {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding: 1.5rem;
+    min-height: 250px; /* กำหนดความสูงคงที่ */
+    width: 800px; /* ขนาดคงที่สำหรับกล่องข้อความ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 20px; /* เพิ่ม margin ซ้าย-ขวา ให้เป็นที่แน่นอน */
+}
+
+.mainReview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviewText {
+    min-height: 60px; /* กำหนดความสูงขั้นต่ำ */
+    max-height: 120px; /* กำหนดความสูงสูงสุด */
+    overflow: hidden; /* ซ่อนข้อความเกิน */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem; /* เพิ่ม padding เพื่อป้องกันข้อความชนขอบ */
+}
+
+.rating {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    white-space: nowrap; /* ป้องกันการตัดบรรทัด */
+}
+
+.profileImagesContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    /* align-items: center; // ปรับเป็น flex-start แทน เพื่อไม่ให้เลื่อนไป */
+}
+
+.profileImageWrapper {
+    text-align: center;
+}
+
+.reviewImage {
+    border-radius: 50%;
+    border: 3px solid #333;
+}
+
+.smallProfileImage {
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    width: 50px; /* ขนาดคงที่สำหรับรูปภาพเล็ก */
+    height: 50px; /* ขนาดคงที่สำหรับรูปภาพเล็ก */
+}
+
+.smallProfileImage:hover {
+    border-color: #333;
+}
+
+/* กำหนดขนาดพื้นที่ของรูปโปรไฟล์เล็กไม่ว่าจะมีหรือไม่มี */
+.emptyProfileImage {
+    width: 50px;
+    height: 50px;
+    visibility: hidden; /* ซ่อนรูปถ้าไม่มีแต่ยังคงขนาดไว้ */
+}
