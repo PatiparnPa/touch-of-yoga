@@ -3,13 +3,19 @@ import "./styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+{/***************Font Zone*********************/}
+import { Playfair_Display } from '@next/font/google';
 
-
+const fonts = Playfair_Display({
+  weight: ['400'], // ระบุน้ำหนักของฟอนต์ที่ต้องการใช้
+  subsets: ['latin'], // ระบุ subset ที่ต้องการใช้
+});
+{/***************Font Zone*********************/}
 
 export default function RootLayout({ children }) {
   return (
       <html lang="en"> 
-          <body>
+          <body  className={fonts.className}>
           <link rel="icon" href="/images/favicon.png" type="image/png" />
               <Navbar />
               <main>{children}</main>
