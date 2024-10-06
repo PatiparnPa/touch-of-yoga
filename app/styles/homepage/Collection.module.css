@@ -1,0 +1,80 @@
+.productCollection {
+    background: #d8dedc;
+    padding: 12px 0px 12px 0px;
+}
+
+.collectionTopic {
+    color: black;
+    font-size: 48px;
+    margin-left: 250px;
+}
+
+.collectionParagragh {
+    color: black;
+    font-size: 16px;
+    margin-left: 250px;
+}
+
+/* การตั้งค่าของ Slider */
+.collectionSlider {
+    width: 100%;
+    overflow: hidden;
+    /* ซ่อนสิ่งที่เลื่อนออกนอกจอ */
+    position: relative;
+    /* เพื่อให้ child ของมันวางตำแหน่งได้ถูกต้อง */
+}
+
+.sliderTrack {
+    display: flex;
+    width: calc(300px * 12);
+    /* จำนวน Item x ความกว้างของ Item */
+    animation: scroll 15s linear infinite;
+    /* ปรับความเร็วของการเลื่อน */
+}
+
+.collectionItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    /* ตั้งค่าความกว้างของแต่ละภาพ */
+    margin-right: 20px;
+    /* เพิ่มระยะห่างระหว่าง Collection */
+}
+
+
+.collectionImage {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    /* ให้เต็มความกว้าง */
+    height: auto;
+    /* ปรับความสูงอัตโนมัติตามภาพ */
+}
+
+.collectionName {
+    margin-top: 10px;
+    color: #708395;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Animation สำหรับทำให้เลื่อนอย่างต่อเนื่อง */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* เปลี่ยนเป็น 50% เพื่อให้ภาพที่สองเริ่มต้นใหม่ */
+    }
+}
+
+/* ปรับการเลื่อนแบบ Infinite */
+.sliderTrack:hover {
+    animation-play-state: paused;
+    /* หยุดการเลื่อนเมื่อ Hover */
+}
