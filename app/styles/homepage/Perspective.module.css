@@ -6,12 +6,15 @@
     align-items: center;
 }
 
+
 .perspectiveHeader {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1400px;
     padding: 0 20px;
+    margin: 0 250px; /* เพิ่ม margin เพื่อให้ห่างจากขอบจอ 250px */
+    width: calc(100% - 500px); /* คำนวณความกว้างเพื่อให้มีพื้นที่ทั้งสองข้าง */
+    max-width: 1400px; /* ความกว้างสูงสุดของ container */
 }
 
 .perspectiveFilterButton {
@@ -50,8 +53,9 @@
     display: flex; /* ใช้ flexbox แทน grid */
     gap: 20px;
     margin-top: 20px;
-    max-width: 1200px;
-    width: 100%;
+    margin: 24 250px; /* เพิ่ม margin เพื่อให้ห่างจากขอบจอ 250px */
+    width: calc(100% - 500px); /* คำนวณความกว้างเพื่อให้มีพื้นที่ทั้งสองข้าง */
+    max-width: 1400px; /* ความกว้างสูงสุดของ container */
 }
 
 .column {
