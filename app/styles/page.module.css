@@ -1,0 +1,726 @@
+/* Container for the image slider */
+.container {
+    width: 100%;
+    /* Full width */
+    overflow: hidden;
+    /* Hide overflowing content */
+    position: relative;
+    /* Position for handling the slider */
+}
+
+.slider {
+    display: flex;
+    /* Arrange images horizontally */
+    transition: transform 0.5s ease-in-out;
+    /* Smooth slide transition */
+}
+
+.slide {
+    min-width: 100%;
+    /* Each image takes full width */
+    height: 500px;
+    /* Set the height for the slider */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    object-fit: cover;
+    /* Ensure image retains its aspect ratio */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+}
+
+/* Quote section */
+.quote {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #708395;
+    color: white;
+    padding: 24px;
+    font-size: 24px;
+}
+
+/************************************************/
+
+/* Upcoming Event section */
+.upcomingEvent {
+    display: flex;
+    /* Use flexbox to create columns */
+    align-items: center;
+    /* Center content vertically */
+    padding: 50px;
+    /* Add padding for spacing */
+    background-color: #C1CFD6;
+    /* Optional background color */
+    gap: 20px;
+    /* Space between left and right columns */
+}
+
+.leftColumn {
+    flex: 1;
+    /* Left column takes half of the space */
+    display: flex;
+    justify-content: center;
+    /* Center image horizontally */
+    align-items: center;
+    /* Center image vertically */
+}
+
+.leftColumn img {
+    width: 100%;
+    /* Make the image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-width: 500px;
+    /* Set a maximum width */
+    object-fit: cover;
+    /* Ensure the image covers the container without distortion */
+    border-radius: 10px;
+    /* Optional: round the corners */
+}
+
+.rightColumn {
+    flex: 1;
+    /* Right column takes up one part of the space */
+    color: #708395;
+    display: flex;
+    /* ทำให้เนื้อหาภายในใช้ Flexbox */
+    flex-direction: column;
+    /* จัดเรียงเนื้อหาในแนวตั้ง */
+    justify-content: center;
+    /* จัดตำแหน่งให้อยู่ตรงกลางในแนวตั้ง */
+    align-items: center;
+    /* จัดตำแหน่งให้อยู่ตรงกลางในแนวนอน */
+}
+
+.rightColumnTitle {
+    font-size: 48px;
+    /* Larger text for the title */
+    margin-bottom: 10px;
+    /* Space below the title */
+}
+
+.rightColumn .subtitle {
+    font-size: 1.2rem;
+    /* Smaller subtitle text */
+    margin-bottom: 20px;
+    /* Space below the subtitle */
+}
+
+.button {
+    background-color: #708395;
+    ;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    padding: 10px 20px;
+    /* Button padding */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    margin-bottom: 20px;
+    /* Space below the button */
+}
+
+/* ส่วนการนับถอยหลัง */
+/* Countdown section */
+.countdown {
+    display: flex;
+    /* ใช้ flexbox ในการจัด layout ของการนับถอยหลัง */
+    justify-content: center;
+    /* จัดตำแหน่งให้อยู่ตรงกลางทั้งหมด */
+    gap: 10px;
+    /* ช่องว่างระหว่างแต่ละรายการการนับถอยหลังลดลงเหลือ 10px */
+    font-size: 1.5rem;
+    /* ขนาดตัวเลขการนับถอยหลัง */
+    font-weight: bold;
+    /* ทำให้ตัวเลขหนาขึ้น */
+}
+
+.countdown div {
+    display: flex;
+    flex-direction: column;
+    /* จัดเรียงตัวเลขและป้ายชื่อในแนวตั้ง */
+    align-items: center;
+    /* จัดให้อยู่ตรงกลางในแนวนอน */
+    min-width: 100px;
+    /* กำหนดความกว้างขั้นต่ำ */
+    color: #708395;
+}
+
+/************************Gift **************/
+.giftVocher {
+    display: flex;
+    gap: 20px;
+    /* ช่องว่างระหว่างคอลัมน์ */
+    padding: 50px;
+    /* Add padding for spacing */
+    margin-left: 200px;
+}
+
+.giftTopic {
+    color: black;
+    font-size: 48px;
+}
+
+.giftParagragh {
+    color: #708395;
+    font-size: 16px;
+}
+
+.giftVocher a {
+    color: #3B757F;
+    font-size: 16px;
+}
+
+
+.giftLeftCol {
+    flex: 1;
+}
+
+.giftRightCol {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    /* ช่องว่างระหว่างรูป */
+}
+
+.imageContainer {
+    position: relative;
+    /* กำหนด position เป็น relative เพื่อให้ใช้ overlay ได้ */
+    width: 100%;
+    /* ปรับความกว้างให้เต็ม container */
+    max-width: 300px;
+    /* กำหนดความกว้างสูงสุดของรูป */
+    height: auto;
+    /* รักษาสัดส่วนของรูป */
+    overflow: hidden;
+    /* ซ่อนส่วนเกินของรูป */
+    border-radius: 10px;
+    /* มุมมน */
+    cursor: pointer;
+    /* เปลี่ยน cursor เป็น pointer */
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ให้รูปปรับขนาดตาม container โดยไม่เสียสัดส่วน */
+    transition: transform 0.3s ease;
+    /* เพิ่มการเคลื่อนไหวเวลา hover */
+}
+
+.imageContainer:hover .image {
+    transform: scale(1.1);
+    /* ขยายรูปภาพเมื่อ hover */
+}
+
+.overlay {
+    position: absolute;
+    /* วาง overlay ทับบนรูป */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* สีดำโปร่งใส 50% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* ซ่อน overlay ตอนปกติ */
+    transition: opacity 0.3s ease;
+    /* เพิ่มเอฟเฟกต์เลื่อนเมื่อ hover */
+}
+
+.imageContainer:hover .overlay {
+    opacity: 1;
+    /* แสดง overlay เมื่อ hover */
+}
+
+.overlay span {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+/************************Collection **************/
+.productCollection {
+    background: #d8dedc;
+    padding: 12px 0px 12px 0px;
+}
+
+.collectionTopic {
+    color: black;
+    font-size: 48px;
+    margin-left: 250px;
+}
+
+.collectionParagragh {
+    color: black;
+    font-size: 16px;
+    margin-left: 250px;
+}
+
+/* การตั้งค่าของ Slider */
+.collectionSlider {
+    width: 100%;
+    overflow: hidden;
+    /* ซ่อนสิ่งที่เลื่อนออกนอกจอ */
+    position: relative;
+    /* เพื่อให้ child ของมันวางตำแหน่งได้ถูกต้อง */
+}
+
+.sliderTrack {
+    display: flex;
+    width: calc(300px * 12);
+    /* จำนวน Item x ความกว้างของ Item */
+    animation: scroll 15s linear infinite;
+    /* ปรับความเร็วของการเลื่อน */
+}
+
+.collectionItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    /* ตั้งค่าความกว้างของแต่ละภาพ */
+    margin-right: 20px;
+    /* เพิ่มระยะห่างระหว่าง Collection */
+}
+
+
+.collectionImage {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    /* ให้เต็มความกว้าง */
+    height: auto;
+    /* ปรับความสูงอัตโนมัติตามภาพ */
+}
+
+.collectionName {
+    margin-top: 10px;
+    color: #708395;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Animation สำหรับทำให้เลื่อนอย่างต่อเนื่อง */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* เปลี่ยนเป็น 50% เพื่อให้ภาพที่สองเริ่มต้นใหม่ */
+    }
+}
+
+/* ปรับการเลื่อนแบบ Infinite */
+.sliderTrack:hover {
+    animation-play-state: paused;
+    /* หยุดการเลื่อนเมื่อ Hover */
+}
+
+
+
+/* tribeFav */
+.tribeFav {
+    display: flex;
+    flex-direction: column;
+    /* จัดเรียงในแนวตั้ง */
+    padding: 0px 250px 0px 250px;
+    /* เพิ่ม padding ซ้ายขวา */
+}
+
+.tribeFavHeader {
+    display: flex;
+    /* ใช้ Flexbox สำหรับจัดเรียงหัวข้อ */
+    justify-content: space-between;
+    /* จัดให้หัวข้ออยู่ซ้ายและ View all อยู่ขวา */
+    align-items: center;
+    /* ให้อยู่กลางแนวตั้ง */
+}
+
+.tribeFavTopic {
+    color: #3B757F;
+    font-size: 48px;
+}
+
+.viewAll {
+    color: #3B757F;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    /* เพิ่ม cursor pointer */
+}
+
+
+.productList {
+    display: flex;
+    overflow-x: hidden;
+    /* ไม่ให้แสดง scrollbar */
+    gap: 20px;
+    /* ช่องว่างระหว่างสินค้า */
+}
+
+.productItem {
+    display: flex;
+    flex-direction: column;
+    /* จัดให้ชื่อสินค้าอยู่ใต้รูป */
+    align-items: center;
+    /* จัดให้กลาง */
+    min-width: 300px;
+    /* กำหนดความกว้างขั้นต่ำ */
+    transition: transform 0.2s;
+    /* สำหรับ hover effect */
+}
+
+.productImage {
+    width: 100%;
+    /* ใช้ 100% ของ container */
+    height: auto;
+    /* ให้รักษาสัดส่วน */
+}
+
+.productItem:hover .productImage {
+    content: url('/images/product1-hover.jpg');
+    /* ใช้รูป hover */
+}
+
+.scrollButton {
+    position: relative;
+    /* ทำให้ปุ่มเลื่อนอยู่ตามธรรมชาติ */
+    background-color: #3B757F;
+    color: white;
+    border: none;
+
+    cursor: pointer;
+    border-radius: 50%;
+    /* ทำให้เป็นรูปวงกลม */
+    width: 40px;
+    /* กำหนดขนาดปุ่ม */
+    height: 40px;
+    /* กำหนดขนาดปุ่ม */
+    margin: 10px;
+    /* ระยะห่างรอบๆ ปุ่ม */
+}
+
+.scrollButton:first-of-type {
+    margin-right: auto;
+    /* ย้ายปุ่มซ้ายไปด้านซ้าย */
+    transform: translateY(-600%);
+    /* ปรับให้กลาง */
+}
+
+.scrollButton:last-of-type {
+    margin-left: auto;
+    /* ย้ายปุ่มขวาไปด้านขวา */
+    transform: translateY(-749%);
+    /* ปรับให้กลาง */
+}
+
+
+
+/************************Perspective*************/
+
+.perspective {
+    background: #d8dedc;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align items */
+}
+
+.perspectiveHeader {
+    display: flex;
+    /* ใช้ flexbox */
+    justify-content: space-between;
+    /* จัดตำแหน่งปุ่ม Filter และ View All */
+    width: 100%;
+    /* ทำให้ความกว้างเต็ม */
+    max-width: 1200px;
+    /* กำหนดความกว้างสูงสุด */
+    padding: 0 20px;
+    /* Padding ข้าง */
+}
+
+.perspectiveFilterButton {
+    display: flex;
+    /* ใช้ flexbox */
+    gap: 20px;
+    /* ระยะห่างระหว่างปุ่ม */
+}
+
+.perspectiveFilterButton button {
+    font-size: 24px;
+    /* ขนาดตัวอักษร */
+    padding: 10px 20px;
+    /* Padding */
+    cursor: pointer;
+    /* แสดง cursor แบบ pointer */
+    background: none;
+    /* ไม่ให้ปุ่มมีพื้นหลัง */
+    border: 2px solid transparent;
+    /* กรอบปุ่มเริ่มต้น */
+    transition: background-color 0.3s, border-color 0.3s;
+    /* เพิ่ม transition */
+}
+
+.perspectiveFilterButton button:hover {
+    background-color: #a0a0a0;
+    /* สีพื้นหลังเมื่อ hover */
+}
+
+.perspectiveFilterButton button.active {
+    background-color: #3B757F;
+    /* สีเมื่อ active */
+    color: white;
+    /* สีข้อความเมื่อ active */
+    border-color: #3B757F;
+    /* กรอบเมื่อ active */
+}
+
+.viewAll {
+    align-self: center;
+    /* Center align vertically */
+    margin-left: auto;
+    /* จัดตำแหน่งให้ติดขวา */
+    font-size: 24px;
+    /* ขนาดตัวอักษร */
+}
+
+.articleContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 คอลัมน์ */
+    gap: 20px;
+    /* ระยะห่างระหว่างคอลัมน์ */
+    margin-top: 20px;
+    /* ระยะห่างด้านบน */
+}
+
+.articleItem {
+    position: relative;
+    /* สำหรับการจัดการตำแหน่งของข้อความ */
+}
+
+.articleImage {
+    width: 100%;
+    /* ใช้ความกว้าง 100% */
+    height: auto;
+    /* อัตโนมัติตามความกว้าง */
+    border-radius: 8px;
+    /* มุมโค้ง */
+}
+
+.articleText {
+    position: absolute;
+    /* ตำแหน่งแบบ absolute */
+    bottom: 10px;
+    /* ขอบล่าง */
+    left: 10px;
+    /* ขอบซ้าย */
+    color: white;
+    /* สีข้อความ */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    /* เงาข้อความ */
+}
+
+.tag {
+    display: block;
+    /* แสดงเป็น block */
+    font-size: 14px;
+    /* ขนาดตัวอักษร */
+    padding: 4px 8px;
+    /* Padding */
+    border-radius: 4px;
+    /* มุมโค้ง */
+}
+
+
+/************************Send Email*************/
+
+.sendEmail {
+    background: #637D80;
+    align-items: center;
+    padding: 24px 48px 48px 48px;
+    text-align: center;
+}
+
+.sendEmailTopic {
+    font-size: 48px;
+    color: white;
+}
+
+.sendEmailParagraph {
+    font-size: 16px;
+    color: white;
+}
+
+.emailInputContainer {
+    display: flex; /* ใช้ flexbox เพื่อจัดตำแหน่ง */
+    justify-content: center; /* จัดตำแหน่งให้กลาง */
+    margin-top: 20px; /* ระยะห่างด้านบน */
+}
+
+.emailInput {
+    padding: 10px; /* Padding สำหรับ input */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    border: 1px solid white; /* กรอบสีขาว */
+    border-radius: 4px 0 0 4px; /* มุมโค้งเฉพาะด้านซ้าย */
+    outline: none; /* ไม่ให้มีกรอบสีเมื่อ click */
+    width: 300px; /* ความกว้างของ input */
+    transition: border-color 0.3s; /* เพิ่ม transition */
+    background-color: transparent; /* ทำให้พื้นหลังใส */
+    color: white; /* สีตัวอักษร */
+}
+
+/* Style for the placeholder */
+.emailInput::placeholder {
+    color: white; /* เปลี่ยนสีของ placeholder */
+    opacity: 0.7; /* เพิ่มความโปร่งใสให้กับ placeholder */
+}
+
+.emailInput:focus {
+    border-color: #3B757F; /* เปลี่ยนสีกรอบเมื่อ focus */
+}
+
+.sendButton {
+    padding: 10px 20px; /* Padding สำหรับปุ่ม */
+    background: #3B757F; /* สีพื้นหลังปุ่ม */
+    color: white; /* สีตัวอักษร */
+    border: none; /* ไม่มีกรอบ */
+    border-radius: 0 4px 4px 0; /* มุมโค้งเฉพาะด้านขวา */
+    cursor: pointer; /* แสดง cursor แบบ pointer */
+    transition: background-color 0.3s; /* เพิ่ม transition */
+}
+
+.sendButton:hover {
+    background: #2b585b; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+}
+
+
+
+
+.testimonial {
+    text-align: center;
+    padding: 2rem;
+}
+
+.testimonialContainer {
+    display: flex;
+    align-items: center; /* Align items to center */
+    justify-content: center;
+    position: relative;
+}
+
+.arrowButtonLeft,
+.arrowButtonRight {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 40px; /* ขนาดคงที่สำหรับปุ่ม */
+    height: 40px; /* ขนาดคงที่สำหรับปุ่ม */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.arrowButtonLeft:hover,
+.arrowButtonRight:hover {
+    background-color: #f0f0f0;
+}
+
+.testimonialContent {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding: 1.5rem;
+    min-height: 250px; /* กำหนดความสูงคงที่ */
+    width: 800px; /* ขนาดคงที่สำหรับกล่องข้อความ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 20px; /* เพิ่ม margin ซ้าย-ขวา ให้เป็นที่แน่นอน */
+}
+
+.mainReview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviewText {
+    min-height: 60px; /* กำหนดความสูงขั้นต่ำ */
+    max-height: 120px; /* กำหนดความสูงสูงสุด */
+    overflow: hidden; /* ซ่อนข้อความเกิน */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem; /* เพิ่ม padding เพื่อป้องกันข้อความชนขอบ */
+}
+
+.rating {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    white-space: nowrap; /* ป้องกันการตัดบรรทัด */
+}
+
+.profileImagesContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    /* align-items: center; // ปรับเป็น flex-start แทน เพื่อไม่ให้เลื่อนไป */
+}
+
+.profileImageWrapper {
+    text-align: center;
+}
+
+.reviewImage {
+    border-radius: 50%;
+    border: 3px solid #333;
+}
+
+.smallProfileImage {
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    width: 50px; /* ขนาดคงที่สำหรับรูปภาพเล็ก */
+    height: 50px; /* ขนาดคงที่สำหรับรูปภาพเล็ก */
+}
+
+.smallProfileImage:hover {
+    border-color: #333;
+}
+
+/* กำหนดขนาดพื้นที่ของรูปโปรไฟล์เล็กไม่ว่าจะมีหรือไม่มี */
+.emptyProfileImage {
+    width: 50px;
+    height: 50px;
+    visibility: hidden; /* ซ่อนรูปถ้าไม่มีแต่ยังคงขนาดไว้ */
+}

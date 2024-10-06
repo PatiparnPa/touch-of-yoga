@@ -1,0 +1,64 @@
+.footer {
+ background: white;
+ padding-top: 48px;
+}
+
+.footerRow1 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%; /* ใช้ max-width แทน */
+    margin: 0;
+    padding: 12px;
+    box-shadow: none;
+}
+
+.footerRow2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%; /* ใช้ max-width แทน */
+    margin: 0;
+    padding: 12px;
+    box-shadow: none;
+}
+
+
+.footColumn {
+    display: flex;
+    /* ใช้ flexbox สำหรับแต่ละคอลัมน์ */
+    flex-direction: column;
+    /* จัดแนวเป็นคอลัมน์ */
+    margin: 0px 150px 0px 150px;
+    /* เพิ่มระยะห่างซ้ายขวา */
+}
+
+.footer a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+.linkBold {
+    font-size: 16px;
+    /* ขนาดฟอนต์ใหญ่ */
+    font-weight: bold;
+    /* ฟอนต์หนา */
+    color: black;
+    /* สีฟอนต์ */
+}
+
+.linkText {
+    font-size: 16px;
+    /* ขนาดฟอนต์ใหญ่ */
+    font-weight: normal;
+    /* ฟอนต์หนา */
+    color: black;
+    /* สีฟอนต์ */
+}
+
+.footerLine {
+    height: 0.1px; /* Thickness of the line */
+    background-color: #C8C8C8; /* Color of the line */
+    width: 90%; /* Full width */
+    margin: auto; /* Spacing above and below the line */
+    justify-content: center;
+}

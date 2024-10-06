@@ -1,0 +1,6 @@
+html, body {
+  margin: 0; /* ลบ margin */
+  padding: 0; /* ลบ padding */
+  width: 100%; /* กำหนดความกว้างให้เต็ม */
+  height: 100%; /* กำหนดความสูงให้เต็ม */
+}
