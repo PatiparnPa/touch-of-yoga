@@ -1,0 +1,60 @@
+/************************Send Email*************/
+
+.sendEmail {
+    background: #637D80;
+    align-items: center;
+    padding: 24px 48px 48px 48px;
+    text-align: center;
+}
+
+.sendEmailTopic {
+    font-size: 48px;
+    color: white;
+}
+
+.sendEmailParagraph {
+    font-size: 16px;
+    color: white;
+}
+
+.emailInputContainer {
+    display: flex; /* ใช้ flexbox เพื่อจัดตำแหน่ง */
+    justify-content: center; /* จัดตำแหน่งให้กลาง */
+    margin-top: 20px; /* ระยะห่างด้านบน */
+}
+
+.emailInput {
+    padding: 10px; /* Padding สำหรับ input */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    border: 1px solid white; /* กรอบสีขาว */
+    border-radius: 4px 0 0 4px; /* มุมโค้งเฉพาะด้านซ้าย */
+    outline: none; /* ไม่ให้มีกรอบสีเมื่อ click */
+    width: 300px; /* ความกว้างของ input */
+    transition: border-color 0.3s; /* เพิ่ม transition */
+    background-color: transparent; /* ทำให้พื้นหลังใส */
+    color: white; /* สีตัวอักษร */
+}
+
+/* Style for the placeholder */
+.emailInput::placeholder {
+    color: white; /* เปลี่ยนสีของ placeholder */
+    opacity: 0.7; /* เพิ่มความโปร่งใสให้กับ placeholder */
+}
+
+.emailInput:focus {
+    border-color: #3B757F; /* เปลี่ยนสีกรอบเมื่อ focus */
+}
+
+.sendButton {
+    padding: 10px 20px; /* Padding สำหรับปุ่ม */
+    background: #3B757F; /* สีพื้นหลังปุ่ม */
+    color: white; /* สีตัวอักษร */
+    border: none; /* ไม่มีกรอบ */
+    border-radius: 0 4px 4px 0; /* มุมโค้งเฉพาะด้านขวา */
+    cursor: pointer; /* แสดง cursor แบบ pointer */
+    transition: background-color 0.3s; /* เพิ่ม transition */
+}
+
+.sendButton:hover {
+    background: #2b585b; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+}

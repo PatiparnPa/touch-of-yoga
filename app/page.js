@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import styles from "./styles/page.module.css"; // ตรวจสอบให้แน่ใจว่าเส้นทางถูกต้อง
 import { useRef, useCallback } from "react";
+import SendEmail from "@/components/homepage/SendEmail";
 
 export default function Home() {
   const images = [
@@ -143,7 +144,7 @@ export default function Home() {
     : articles.filter(article => article.tag === activeFilter);
 
 
- // ส่วนของ Review
+ //////////////// ส่วนของ Review
  const reviews = [
   {
     id: 1,
@@ -175,7 +176,7 @@ export default function Home() {
   },
   {
     id: 5,
-    name: "Madeline Young",
+    name: "(Cameron Williamson)",
     message: "Etiam dignissim eros euismod, vehicula libero vel, congue felis.",
     rating: 5,
     image: "/images/product1.jpg",
@@ -489,20 +490,7 @@ const handleSelectReview = (index) => {
         </div>
       </div>
 
-
-      {/* Send Email */}
-      <div className={styles.sendEmail}>
-        <h1 className={styles.sendEmailTopic}>Subscribe to our emails</h1>
-        <p className={styles.sendEmailParagraph}>Be the first to know about new collections and exclusive offers.</p>
-        <div className={styles.emailInputContainer}>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className={styles.emailInput}
-          />
-          <button className={styles.sendButton}>Join us</button>
-        </div>
-      </div>
+     <SendEmail />
     </>
   );
 }
