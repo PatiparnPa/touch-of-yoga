@@ -4,10 +4,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 
+
+
 export default function RootLayout({ children }) {
   return (
       <html lang="en"> 
           <body>
+          <link rel="icon" href="/images/favicon.png" type="image/png" />
               <Navbar />
               <main>{children}</main>
               <Footer />
