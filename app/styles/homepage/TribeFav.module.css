@@ -1,0 +1,94 @@
+.tribeFav {
+    display: flex;
+    flex-direction: column;
+    /* จัดเรียงในแนวตั้ง */
+    padding: 0px 250px 0px 250px;
+    /* เพิ่ม padding ซ้ายขวา */
+}
+
+.tribeFavHeader {
+    display: flex;
+    /* ใช้ Flexbox สำหรับจัดเรียงหัวข้อ */
+    justify-content: space-between;
+    /* จัดให้หัวข้ออยู่ซ้ายและ View all อยู่ขวา */
+    align-items: center;
+    /* ให้อยู่กลางแนวตั้ง */
+}
+
+.tribeFavTopic {
+    color: #3B757F;
+    font-size: 48px;
+}
+
+.viewAll {
+    color: #3B757F;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    /* เพิ่ม cursor pointer */
+}
+
+
+.productList {
+    display: flex;
+    overflow-x: hidden;
+    /* ไม่ให้แสดง scrollbar */
+    gap: 20px;
+    /* ช่องว่างระหว่างสินค้า */
+}
+
+.productItem {
+    display: flex;
+    flex-direction: column;
+    /* จัดให้ชื่อสินค้าอยู่ใต้รูป */
+    align-items: center;
+    /* จัดให้กลาง */
+    min-width: 300px;
+    /* กำหนดความกว้างขั้นต่ำ */
+    transition: transform 0.2s;
+    /* สำหรับ hover effect */
+}
+
+.productImage {
+    width: 100%;
+    /* ใช้ 100% ของ container */
+    height: auto;
+    /* ให้รักษาสัดส่วน */
+}
+
+.productItem:hover .productImage {
+    content: url('/images/product1-hover.jpg');
+    /* ใช้รูป hover */
+}
+
+.scrollButton {
+    position: relative;
+    /* ทำให้ปุ่มเลื่อนอยู่ตามธรรมชาติ */
+    background-color: #3B757F;
+    color: white;
+    border: none;
+
+    cursor: pointer;
+    border-radius: 50%;
+    /* ทำให้เป็นรูปวงกลม */
+    width: 40px;
+    /* กำหนดขนาดปุ่ม */
+    height: 40px;
+    /* กำหนดขนาดปุ่ม */
+    margin: 10px;
+    /* ระยะห่างรอบๆ ปุ่ม */
+}
+
+.scrollButton:first-of-type {
+    margin-right: auto;
+    /* ย้ายปุ่มซ้ายไปด้านซ้าย */
+    transform: translateY(-600%);
+    /* ปรับให้กลาง */
+}
+
+.scrollButton:last-of-type {
+    margin-left: auto;
+    /* ย้ายปุ่มขวาไปด้านขวา */
+    transform: translateY(-749%);
+    /* ปรับให้กลาง */
+}

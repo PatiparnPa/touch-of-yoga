@@ -4,10 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import styles from "./styles/page.module.css"; // ตรวจสอบให้แน่ใจว่าเส้นทางถูกต้อง
-import { useRef, useCallback } from "react";
 import SendEmail from "@/components/homepage/SendEmail";
 import Testimonial from "@/components/homepage/Testimonial";
 import Perspective from "@/components/homepage/Perspective";
+import TribeFav from "@/components/homepage/TribeFav";
 
 export default function Home() {
   const images = [
@@ -70,30 +70,7 @@ export default function Home() {
     { image: "/images/collection6.jpg", name: "Collection6", link: "/collection6" },
   ];
 
-  const products = [
-    { image: "/images/product1.jpg", hoverImage: "/images/product1-hover.jpg", name: "Product 1", price: "$25" },
-    { image: "/images/product1.jpg", hoverImage: "/images/product1-hover.jpg", name: "Product 2", price: "$30" },
-    { image: "/images/product1.jpg", hoverImage: "/images/product1-hover.jpg", name: "Product 3", price: "$20" },
-    { image: "/images/product1.jpg", hoverImage: "/images/product1-hover.jpg", name: "Product 4", price: "$35" },
-    { image: "/images/product1.jpg", hoverImage: "/images/product1-hover.jpg", name: "Product 5", price: "$40" },
-    { image: "/images/product1.jpg", hoverImage: "/images/product1-hover.jpg", name: "Product 6", price: "$45" },
-    { image: "/images/product1.jpg", hoverImage: "/images/product1-hover.jpg", name: "Product 7", price: "$50" },
-    { image: "/images/product1.jpg", hoverImage: "/images/product1-hover.jpg", name: "Product 8", price: "$55" },
-  ];
-
-  const productListRef = useRef(null);
-
-  const scrollLeft = useCallback(() => {
-    if (productListRef.current) {
-      productListRef.current.scrollBy({ left: -300, behavior: "smooth" });
-    }
-  }, []);
-
-  const scrollRight = useCallback(() => {
-    if (productListRef.current) {
-      productListRef.current.scrollBy({ left: 300, behavior: "smooth" });
-    }
-  }, []);
+  
 
 
 
@@ -226,38 +203,8 @@ export default function Home() {
       </div>
 
       {/* Tribe's Favorite */}
-      <div className={styles.tribeFav}>
-        <div className={styles.tribeFavHeader}>
-          <h1 className={styles.tribeFavTopic}>Tribe’s Favorite</h1>
-          <Link href="/" className={styles.viewAll}>View all</Link>
-        </div>
-        <div className={styles.productList} ref={productListRef}>
-          {products.slice(0, 8).map((product, index) => (
-            <div key={index} className={styles.productItem}>
-              <Image
-                src={product.image}
-                alt={product.name}
-                width={300}  // ปรับขนาดตามต้องการ
-                height={300} // ปรับขนาดตามต้องการ
-                className={styles.productImage}
-              />
-              <h3>{product.name}</h3>
-              <p>{product.price}</p>
-            </div>
-          ))}
-        </div>
-        {/* ปุ่มเลื่อนซ้ายและขวา */}
-        <button className={styles.scrollButton} onClick={scrollLeft}>
-          &lt;
-        </button>
-        <button className={styles.scrollButton} onClick={scrollRight}>
-          &gt;
-        </button>
-      </div>
-
-      {/* Perspective */}
       
-
+<TribeFav />
 <Perspective />
       <Testimonial />
       <SendEmail />
