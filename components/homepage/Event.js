@@ -19,19 +19,17 @@ export default function Event() {
 
         setCountdown({ days, hours, minutes, seconds });
       } else {
-        // เมื่อเวลาหมด
         setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       }
     };
 
-    updateCountdown(); // อัปเดตเวลานับถอยหลังครั้งแรก
-    const countdownInterval = setInterval(updateCountdown, 1000); // อัปเดตนับถอยหลังทุกวินาที
+    updateCountdown();
+    const countdownInterval = setInterval(updateCountdown, 1000);
 
     return () => {
-      clearInterval(countdownInterval); // เคลียร์ interval สำหรับการนับถอยหลัง
+      clearInterval(countdownInterval);
     };
-  }, [targetDate]); // Add targetDate to dependency array if needed
-
+  }, []);  // ใช้ array ว่างเพื่อล็อก useEffect ให้อัปเดตเพียงครั้งเดียว
   return (
     <>
       <div className={styles.upcomingEvent}>
