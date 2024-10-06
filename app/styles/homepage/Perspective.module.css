@@ -1,114 +1,102 @@
 .perspective {
     background: #d8dedc;
-    padding: 12px 0;
+    padding: 24px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center align items */
 }
 
 .perspectiveHeader {
     display: flex;
-    /* ใช้ flexbox */
     justify-content: space-between;
-    /* จัดตำแหน่งปุ่ม Filter และ View All */
     width: 100%;
-    /* ทำให้ความกว้างเต็ม */
-    max-width: 1200px;
-    /* กำหนดความกว้างสูงสุด */
+    max-width: 1400px;
     padding: 0 20px;
-    /* Padding ข้าง */
 }
 
 .perspectiveFilterButton {
     display: flex;
-    /* ใช้ flexbox */
     gap: 20px;
-    /* ระยะห่างระหว่างปุ่ม */
 }
 
 .perspectiveFilterButton button {
-    font-size: 24px;
-    /* ขนาดตัวอักษร */
-    padding: 10px 20px;
-    /* Padding */
+    font-size: 20px;
+    padding: 8px 16px;
     cursor: pointer;
-    /* แสดง cursor แบบ pointer */
     background: none;
-    /* ไม่ให้ปุ่มมีพื้นหลัง */
-    border: 2px solid transparent;
-    /* กรอบปุ่มเริ่มต้น */
+    border: 2px solid #3B757F;
+    border-radius: 50px;
     transition: background-color 0.3s, border-color 0.3s;
-    /* เพิ่ม transition */
 }
 
 .perspectiveFilterButton button:hover {
     background-color: #a0a0a0;
-    /* สีพื้นหลังเมื่อ hover */
 }
 
 .perspectiveFilterButton button.active {
     background-color: #3B757F;
-    /* สีเมื่อ active */
     color: white;
-    /* สีข้อความเมื่อ active */
     border-color: #3B757F;
-    /* กรอบเมื่อ active */
 }
 
 .viewAll {
-    align-self: center;
-    /* Center align vertically */
-    margin-left: auto;
-    /* จัดตำแหน่งให้ติดขวา */
+    color: #3B757F;
     font-size: 24px;
-    /* ขนาดตัวอักษร */
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .articleContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 คอลัมน์ */
+    display: flex; /* ใช้ flexbox แทน grid */
     gap: 20px;
-    /* ระยะห่างระหว่างคอลัมน์ */
     margin-top: 20px;
-    /* ระยะห่างด้านบน */
+    max-width: 1200px;
+    width: 100%;
+}
+
+.column {
+    flex: 1; /* ให้คอลัมน์ทั้งหมดมีความกว้างเท่ากัน */
+    display: flex;
+    flex-direction: column; /* จัดวางบทความในคอลัมน์แนวตั้ง */
+    gap: 20px; /* เพิ่มช่องว่างระหว่างบทความ */
+}
+
+.columnLarge {
+    flex: 2; /* ให้คอลัมน์กลางกว้างกว่า */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* ทำให้แน่ใจว่ามีช่องว่างที่เหมาะสม */
+    gap: 20px;
 }
 
 .articleItem {
+    flex: 1; /* ให้บทความทั้งหมดมีความสูงเท่ากัน */
     position: relative;
-    /* สำหรับการจัดการตำแหน่งของข้อความ */
 }
 
 .articleImage {
     width: 100%;
-    /* ใช้ความกว้าง 100% */
-    height: auto;
-    /* อัตโนมัติตามความกว้าง */
+    height: 100%; /* ให้รูปภาพเต็มขนาด */
     border-radius: 8px;
-    /* มุมโค้ง */
+    object-fit: cover; /* ครอบคลุมให้เต็มพื้นที่ */
 }
 
 .articleText {
     position: absolute;
-    /* ตำแหน่งแบบ absolute */
     bottom: 10px;
-    /* ขอบล่าง */
     left: 10px;
-    /* ขอบซ้าย */
     color: white;
-    /* สีข้อความ */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    /* เงาข้อความ */
+}
+
+.title {
+    margin: 0; /* ไม่มี margin เพื่อให้พอดีกับพื้นที่ */
+    padding-left: 8px;
 }
 
 .tag {
     display: block;
-    /* แสดงเป็น block */
     font-size: 14px;
-    /* ขนาดตัวอักษร */
     padding: 4px 8px;
-    /* Padding */
     border-radius: 4px;
-    /* มุมโค้ง */
 }
