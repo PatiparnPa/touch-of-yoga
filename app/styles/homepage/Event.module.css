@@ -1,0 +1,112 @@
+.upcomingEvent {
+    display: flex;
+    /* Use flexbox to create columns */
+    align-items: center;
+    /* Center content vertically */
+    padding: 50px;
+    /* Add padding for spacing */
+    background-color: #C1CFD6;
+    /* Optional background color */
+    gap: 20px;
+    /* Space between left and right columns */
+}
+
+.leftColumn {
+    flex: 1;
+    /* Left column takes half of the space */
+    display: flex;
+    justify-content: center;
+    /* Center image horizontally */
+    align-items: center;
+    /* Center image vertically */
+}
+
+.leftColumn img {
+    width: 100%;
+    /* Make the image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-width: 500px;
+    /* Set a maximum width */
+    object-fit: cover;
+    /* Ensure the image covers the container without distortion */
+    border-radius: 10px;
+    /* Optional: round the corners */
+}
+
+.rightColumn {
+    flex: 1;
+    /* Right column takes up one part of the space */
+    color: #708395;
+    display: flex;
+    /* ทำให้เนื้อหาภายในใช้ Flexbox */
+    flex-direction: column;
+    /* จัดเรียงเนื้อหาในแนวตั้ง */
+    justify-content: center;
+    /* จัดตำแหน่งให้อยู่ตรงกลางในแนวตั้ง */
+    align-items: center;
+    /* จัดตำแหน่งให้อยู่ตรงกลางในแนวนอน */
+}
+
+.rightColumnTitle {
+    font-size: 48px;
+    /* Larger text for the title */
+    margin-bottom: 10px;
+    /* Space below the title */
+}
+
+.rightColumn .subtitle {
+    font-size: 1.2rem;
+    /* Smaller subtitle text */
+    margin-bottom: 20px;
+    /* Space below the subtitle */
+}
+
+.button {
+    background-color: #708395;
+    ;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    padding: 10px 20px;
+    /* Button padding */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    margin-bottom: 20px;
+    /* Space below the button */
+}
+
+/* ส่วนการนับถอยหลัง */
+/* Countdown section */
+.countdown {
+    display: flex;
+    /* ใช้ flexbox ในการจัด layout ของการนับถอยหลัง */
+    justify-content: center;
+    /* จัดตำแหน่งให้อยู่ตรงกลางทั้งหมด */
+    gap: 10px;
+    /* ช่องว่างระหว่างแต่ละรายการการนับถอยหลังลดลงเหลือ 10px */
+    font-size: 1.5rem;
+    /* ขนาดตัวเลขการนับถอยหลัง */
+    font-weight: bold;
+    /* ทำให้ตัวเลขหนาขึ้น */
+}
+
+.countdown div {
+    display: flex;
+    flex-direction: column;
+    /* จัดเรียงตัวเลขและป้ายชื่อในแนวตั้ง */
+    align-items: center;
+    /* จัดให้อยู่ตรงกลางในแนวนอน */
+    min-width: 100px;
+    /* กำหนดความกว้างขั้นต่ำ */
+    color: #708395;
+}
+
+
+
+
+
