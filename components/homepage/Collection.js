@@ -4,12 +4,13 @@ import styles from '/app/styles/homepage/Collection.module.css';
 
 export default function Collection(){
     const collectionSlider = [
-        { image: "/images/collection1.jpg", name: "Collection1", link: "/collection1" },
-        { image: "/images/collection2.jpg", name: "Collection2", link: "/collection2" },
-        { image: "/images/collection3.jpg", name: "Collection3", link: "/collection3" },
-        { image: "/images/collection4.jpg", name: "Collection4", link: "/collection4" },
-        { image: "/images/collection5.jpg", name: "Collection5", link: "/collection5" },
-        { image: "/images/collection6.jpg", name: "Collection6", link: "/collection6" },
+        { image: "/images/collections/collection1.jpg", name: "Bracelet", link: "/collection1" },
+        { image: "/images/collections/collection2.jpg", name: "Charms", link: "/collection2" },
+        { image: "/images/collections/collection3.jpg", name: "Bangle", link: "/collection3" },
+        { image: "/images/collections/collection4.jpg", name: "Ring", link: "/collection4" },
+        { image: "/images/collections/collection5.jpg", name: "Necklace", link: "/collection5" },
+        { image: "/images/collections/collection6.jpg", name: "FOR HER", link: "/collection6" },
+        { image: "/images/collections/collection7.jpg", name: "FOR HIM", link: "/collection6" },
       ];
     
     return(
