@@ -1,0 +1,114 @@
+.perspective {
+    background: #d8dedc;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align items */
+}
+
+.perspectiveHeader {
+    display: flex;
+    /* ใช้ flexbox */
+    justify-content: space-between;
+    /* จัดตำแหน่งปุ่ม Filter และ View All */
+    width: 100%;
+    /* ทำให้ความกว้างเต็ม */
+    max-width: 1200px;
+    /* กำหนดความกว้างสูงสุด */
+    padding: 0 20px;
+    /* Padding ข้าง */
+}
+
+.perspectiveFilterButton {
+    display: flex;
+    /* ใช้ flexbox */
+    gap: 20px;
+    /* ระยะห่างระหว่างปุ่ม */
+}
+
+.perspectiveFilterButton button {
+    font-size: 24px;
+    /* ขนาดตัวอักษร */
+    padding: 10px 20px;
+    /* Padding */
+    cursor: pointer;
+    /* แสดง cursor แบบ pointer */
+    background: none;
+    /* ไม่ให้ปุ่มมีพื้นหลัง */
+    border: 2px solid transparent;
+    /* กรอบปุ่มเริ่มต้น */
+    transition: background-color 0.3s, border-color 0.3s;
+    /* เพิ่ม transition */
+}
+
+.perspectiveFilterButton button:hover {
+    background-color: #a0a0a0;
+    /* สีพื้นหลังเมื่อ hover */
+}
+
+.perspectiveFilterButton button.active {
+    background-color: #3B757F;
+    /* สีเมื่อ active */
+    color: white;
+    /* สีข้อความเมื่อ active */
+    border-color: #3B757F;
+    /* กรอบเมื่อ active */
+}
+
+.viewAll {
+    align-self: center;
+    /* Center align vertically */
+    margin-left: auto;
+    /* จัดตำแหน่งให้ติดขวา */
+    font-size: 24px;
+    /* ขนาดตัวอักษร */
+}
+
+.articleContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 คอลัมน์ */
+    gap: 20px;
+    /* ระยะห่างระหว่างคอลัมน์ */
+    margin-top: 20px;
+    /* ระยะห่างด้านบน */
+}
+
+.articleItem {
+    position: relative;
+    /* สำหรับการจัดการตำแหน่งของข้อความ */
+}
+
+.articleImage {
+    width: 100%;
+    /* ใช้ความกว้าง 100% */
+    height: auto;
+    /* อัตโนมัติตามความกว้าง */
+    border-radius: 8px;
+    /* มุมโค้ง */
+}
+
+.articleText {
+    position: absolute;
+    /* ตำแหน่งแบบ absolute */
+    bottom: 10px;
+    /* ขอบล่าง */
+    left: 10px;
+    /* ขอบซ้าย */
+    color: white;
+    /* สีข้อความ */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    /* เงาข้อความ */
+}
+
+.tag {
+    display: block;
+    /* แสดงเป็น block */
+    font-size: 14px;
+    /* ขนาดตัวอักษร */
+    padding: 4px 8px;
+    /* Padding */
+    border-radius: 4px;
+    /* มุมโค้ง */
+}
