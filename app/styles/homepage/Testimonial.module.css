@@ -1,6 +1,11 @@
 .testimonial {
     text-align: center;
-    padding: 2rem;
+    padding: 0px 0px 24px 0px
+}
+
+.testimonial h2{
+    color: #3B757F;
+    font-size: 48px;
 }
 
 .testimonialContainer {
@@ -8,6 +13,10 @@
     align-items: center; /* Align items to center */
     justify-content: center;
     position: relative;
+}
+
+.reviewText {
+    font-size: 24px;
 }
 
 .arrowButtonLeft,

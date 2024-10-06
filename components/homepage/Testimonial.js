@@ -3,49 +3,48 @@ import { useState} from "react";
 import Image from "next/image";
 
 export default function Testimonial(){
-    //////////////// ส่วนของ Review
  const reviews = [
     {
       id: 1,
       name: "Marvin McKinney",
       message: "Lorem ipsum dolor sit amet consectetur. Bibendum mi et non tellus rutrum.",
       rating: 5,
-      image: "/images/product1.jpg",
+      image: "/images/person/person1.png",
     },
     {
       id: 2,
       name: "Jessica Edwards",
       message: "Suspendisse nec lectus ut velit aliquam fermentum. Sed gravida ullamcorper.",
       rating: 5,
-      image: "/images/product1.jpg",
+      image: "/images/person/person2.png",
     },
     {
       id: 3,
       name: "Benjamin Carter",
       message: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames.",
       rating: 5,
-      image: "/images/product1.jpg",
+      image: "/images/person/person3.png",
     },
     {
       id: 4,
       name: "Kristin Watson",
       message: "Nullam vehicula mi eget massa suscipit fringilla. Curabitur auctor, arcu nec.",
       rating: 5,
-      image: "/images/product1.jpg",
+      image: "/images/person/person4.png",
     },
     {
       id: 5,
-      name: "(Cameron Williamson)",
+      name: "Cameron Williamson",
       message: "Etiam dignissim eros euismod, vehicula libero vel, congue felis.",
       rating: 5,
-      image: "/images/product1.jpg",
+      image: "/images/person/person5.png",
     },
     {
       id: 6,
       name: "Courtney Henry",
       message: "Phasellus aliquam orci quis odio lobortis, a ultrices lorem accumsan.",
       rating: 5,
-      image: "/images/product1.jpg",
+      image: "/images/person/person6.png",
     },
   ];
   
