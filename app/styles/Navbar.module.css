@@ -59,6 +59,7 @@
 .thirdRow {
     background-color: #7B7B7B; /* พื้นหลังสีเทา */
     color: white; /* ตัวอักษรเป็นสีขาว */
+    padding-bottom: 4px;
 }
 
 /* กำหนดให้ไม่มีเส้นใต้ในลิงค์ */
