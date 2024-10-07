@@ -12,6 +12,7 @@ import Collection from "@/components/homepage/Collection";
 import Gift from "@/components/homepage/Gift";
 import Event from "@/components/homepage/Event";
 import Banner from "@/components/homepage/Banner";
+import BrandAm from "@/components/homepage/BrandAm";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Collection />
       <TribeFav />
       <Perspective />
+      <BrandAm />
       <Testimonial />
       <SendEmail />
     </>

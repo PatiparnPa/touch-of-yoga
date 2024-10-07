@@ -1,0 +1,49 @@
+.BrandAm {
+    display: flex;
+    flex-direction: column;
+}
+
+.BrandAmHeader {
+    display: flex; /* ใช้ Flexbox สำหรับจัดเรียงหัวข้อ */
+    justify-content: space-between; /* จัดให้หัวข้ออยู่ซ้ายและ View all อยู่ขวา */
+    align-items: center; /* ให้อยู่กลางแนวตั้ง */
+    padding: 48px 250px 24px 250px; /* เพิ่ม padding ซ้ายขวา */
+}
+
+.BrandAmTopic {
+    color: #3B757F;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.viewAll {
+    color: #3B757F;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer; /* เพิ่ม cursor pointer */
+}
+
+.text {
+    padding: 0px 24px 24px 250px; /* เพิ่ม padding ซ้ายขวา */
+}
+
+.BrandAmPersonList {
+    display: flex; /* ใช้ Flexbox เพื่อให้รูปภาพเรียงในแนวนอน */
+    overflow-x: auto; /* เปิดการเลื่อนแนวนอน */
+    padding: 20px 250px; /* เพิ่ม padding ด้านข้างให้เท่ากับ .BrandAmHeader */
+    background: #3B757F;
+    justify-content: center; /* จัดให้รูปภาพอยู่กลาง */
+}
+
+.BrandAmPerson {
+    position: relative; /* ใช้เพื่อให้ Image ครอบคลุม Container */
+    width: 250px; /* กำหนดความกว้างของรูปภาพ */
+    height: 250px; /* กำหนดความสูงของรูปภาพ */
+    margin-right: 20px; /* เพิ่มระยะห่างระหว่างรูปภาพ */
+}
+
+.BrandAmImage {
+    border-radius: 50%; /* ทำให้รูปภาพเป็นวงกลม */
+    object-fit: cover; /* ปรับขนาดของรูปภาพให้เต็มพื้นที่ */
+    max-width: 100%; /* ปรับให้เต็มความกว้างของ container */
+}
