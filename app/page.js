@@ -13,6 +13,7 @@ import Gift from "@/components/homepage/Gift";
 import Event from "@/components/homepage/Event";
 import Banner from "@/components/homepage/Banner";
 import BrandAm from "@/components/homepage/BrandAm";
+import TribeYogi from "@/components/homepage/TribeYogi";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Collection />
       <TribeFav />
       <Perspective />
+      <TribeYogi />
       <BrandAm />
       <Testimonial />
       <SendEmail />

@@ -1,6 +1,7 @@
 .BrandAm {
     display: flex;
     flex-direction: column;
+    background: #D9DEDC;
 }
 
 .BrandAmHeader {
@@ -8,6 +9,7 @@
     justify-content: space-between; /* จัดให้หัวข้ออยู่ซ้ายและ View all อยู่ขวา */
     align-items: center; /* ให้อยู่กลางแนวตั้ง */
     padding: 48px 250px 24px 250px; /* เพิ่ม padding ซ้ายขวา */
+    background: #D9DEDC;
 }
 
 .BrandAmTopic {
