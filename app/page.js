@@ -18,7 +18,7 @@ import TribeYogi from "@/components/homepage/TribeYogi";
 export default function Home() {
   return (
     <>
-    <Banner />
+      <Banner />
       <div className={styles.quote}>
         Yoga jewelry, off the mat and into the world, whispers the wisdom of the practice, reminding us<br /> to breathe, find stillness, and embrace the beauty of each moment.
       </div>

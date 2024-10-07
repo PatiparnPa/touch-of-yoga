@@ -3,7 +3,7 @@
     /* Use flexbox to create columns */
     align-items: center;
     /* Center content vertically */
-    padding: 50px;
+    padding: 12px 50px 12px 50px;
     /* Add padding for spacing */
     background-color: #C1CFD6;
     /* Optional background color */

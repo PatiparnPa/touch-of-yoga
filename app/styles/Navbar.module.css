@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center; /* จัดโลโก้ให้กลาง */
     align-items: center;
-    padding: 8px 50px; /* เพิ่ม padding ด้านข้าง */
+    padding: 8px 50px 24px 50px; /* เพิ่ม padding ด้านข้าง */
     height: 140px; /* ปรับความสูงของแถว */
     position: relative; /* เพิ่ม position relative */
 }
