@@ -74,6 +74,7 @@
     font-size: 1.5rem;
     margin: 1rem 0;
     white-space: nowrap; /* ป้องกันการตัดบรรทัด */
+    color: rgb(241, 213, 0);
 }
 
 .profileImagesContainer {
