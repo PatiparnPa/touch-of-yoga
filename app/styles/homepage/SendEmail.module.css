@@ -22,7 +22,7 @@
 .emailInputContainer {
     display: flex; /* ใช้ flexbox เพื่อจัดตำแหน่ง */
     justify-content: center; /* จัดตำแหน่งให้กลาง */
-    margin-top: 20px; /* ระยะห่างด้านบน */
+    margin-top: 4px; /* ระยะห่างด้านบน */
 }
 
 .emailInput {
