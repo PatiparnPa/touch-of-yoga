@@ -42,15 +42,21 @@ export default function Event() {
           />
         </div>
         <div className={styles.rightColumn}>
-          <h1 className={styles.rightColumnTitle}>Upcoming Event</h1>
-          <p>Our wide variety will keep you coming back for more</p>
-          <button className={styles.button}>Let's find out Together</button>
-          <div className={styles.countdown}>
+          <h1 className={styles.rightColumnTitle}>Christmas Gift</h1>
+          <div className={styles.subtitle}>
+          <p >Give the Gift of Meaning this Christmas</p>
+          <p>Share a Touch of Love and Lasting Beauty!</p>
+          </div>
+          <div className={styles.subtitle}>
+          <p>Order by 1/12 to receive by Christmas.</p>
+          </div>
+          <button className={styles.button}>SHOP</button>
+          {/*<div className={styles.countdown}>
             <div>{countdown.days} <span>Days</span></div>
             <div>{countdown.hours} <span>Hour</span></div>
             <div>{countdown.minutes} <span>Minute</span></div>
             <div>{countdown.seconds} <span>Second</span></div>
-          </div>
+          </div>*/}
         </div>
       </div>
     </>
