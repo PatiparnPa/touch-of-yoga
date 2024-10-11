@@ -1,18 +1,20 @@
 .TribeYogi {
     display: flex;
     flex-direction: column;
-    padding-bottom: 24px;
+
 }
 
 .TribeYogiHeader {
     display: flex; /* ใช้ Flexbox สำหรับจัดเรียงหัวข้อ */
     justify-content: space-between; /* จัดให้หัวข้ออยู่ซ้ายและ View all อยู่ขวา */
     align-items: center; /* ให้อยู่กลางแนวตั้ง */
-    padding: 48px 250px 24px 250px; /* เพิ่ม padding ซ้ายขวา */
+    padding-inline: 200px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .TribeYogiTopic {
-    color: #3B757F;
+    color: #6C6C6C;
     font-size: 48px; /* ขนาดของหัวข้อ */
     font-weight: bold;
 }
@@ -52,6 +54,7 @@
 
 .profileDetails {
     margin-top: 20px; /* เพิ่มระยะห่างจากรูปภาพ */
+    font-family: 'Quicksand', sans-serif;
 }
 
 .profileName {

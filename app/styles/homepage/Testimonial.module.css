@@ -1,11 +1,12 @@
 .testimonial {
     text-align: center;
-    padding: 0px 0px 24px 0px
+    padding: 24px 0px 24px 0px
 }
 
 .testimonial h2{
     color: #3B757F;
     font-size: 48px;
+    margin: 0;
 }
 
 .testimonialContainer {

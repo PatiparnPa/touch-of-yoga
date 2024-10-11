@@ -3,13 +3,15 @@
 .sendEmail {
     background: #637D80;
     align-items: center;
-    padding: 24px 48px 48px 48px;
+    padding: 12px 48px 12px 48px;
     text-align: center;
 }
 
 .sendEmailTopic {
     font-size: 48px;
     color: white;
+    font-weight: 100;
+    margin: 0px;
 }
 
 .sendEmailParagraph {
@@ -46,13 +48,15 @@
 }
 
 .sendButton {
-    padding: 10px 20px; /* Padding สำหรับปุ่ม */
-    background: #3B757F; /* สีพื้นหลังปุ่ม */
-    color: white; /* สีตัวอักษร */
+    padding: 8px 24px; /* Padding สำหรับปุ่ม */
+    background: white; /* สีพื้นหลังปุ่ม */
+    color: #3B757F; /* สีตัวอักษร */
     border: none; /* ไม่มีกรอบ */
-    border-radius: 0 4px 4px 0; /* มุมโค้งเฉพาะด้านขวา */
+    border-radius: 4px 4px 4px 4px; /* มุมโค้งเฉพาะด้านขวา */
     cursor: pointer; /* แสดง cursor แบบ pointer */
     transition: background-color 0.3s; /* เพิ่ม transition */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
 }
 
 .sendButton:hover {

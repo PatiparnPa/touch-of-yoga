@@ -1,9 +1,11 @@
+/*****************************Header Section************************************/
 .perspective {
     background: #d8dedc;
-    padding: 24px 0;
+    padding-inline: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 24px;
 }
 
 
@@ -11,10 +13,14 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 20px;
-    margin: 0 250px; /* เพิ่ม margin เพื่อให้ห่างจากขอบจอ 250px */
-    width: calc(100% - 500px); /* คำนวณความกว้างเพื่อให้มีพื้นที่ทั้งสองข้าง */
-    max-width: 1400px; /* ความกว้างสูงสุดของ container */
+    align-content: center;
+}
+
+.topic {
+    color: #6C6C6C;
+    font-size: 48px;
+    font-weight: bold;
+    align-content: center;
 }
 
 .perspectiveFilterButton {
@@ -23,8 +29,8 @@
 }
 
 .perspectiveFilterButton button {
-    font-size: 20px;
-    padding: 8px 16px;
+    font-size: 16px;
+    padding: 0px 24px;
     cursor: pointer;
     background: none;
     border: 2px solid #3B757F;
@@ -47,39 +53,42 @@
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
+    align-content: center;
 }
 
+
+/*****************************Section2************************************/
+
 .articleContainer {
-    display: flex; /* ใช้ flexbox แทน grid */
+    display: flex; 
     gap: 20px;
-    margin: 24px 250px; /* เพิ่ม margin เพื่อให้ห่างจากขอบจอ 250px */
-    width: calc(100% - 500px); /* คำนวณความกว้างเพื่อให้มีพื้นที่ทั้งสองข้าง */
-    max-width: 1400px; /* ความกว้างสูงสุดของ container */
+    margin: 16px;
+    padding-inline: 200px; 
+    max-width: 1280px;
+    overflow: hidden;
 }
 
 .column {
-    flex: 1; /* ให้คอลัมน์ทั้งหมดมีความกว้างเท่ากัน */
+    flex: 1;
     display: flex;
-    flex-direction: column; /* จัดวางบทความในคอลัมน์แนวตั้ง */
-    gap: 20px; /* เพิ่มช่องว่างระหว่างบทความ */
+    flex-direction: column;
+    gap: 20px;
 }
 
 .columnLarge {
-    flex: 2; /* ให้คอลัมน์กลางกว้างกว่า */
+    flex: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* ทำให้แน่ใจว่ามีช่องว่างที่เหมาะสม */
+    justify-content: space-between;
     gap: 20px;
 }
 
 .articleItem {
-    flex: 1; /* ให้บทความทั้งหมดมีความสูงเท่ากัน */
+    flex: 1;
     position: relative;
 }
 
 .articleImage {
-    width: 100%;
-    height: 100%; /* ให้รูปภาพเต็มขนาด */
     border-radius: 8px;
     object-fit: cover; /* ครอบคลุมให้เต็มพื้นที่ */
 }
@@ -90,6 +99,7 @@
     left: 10px;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    font-family: 'Century', serif;
 }
 
 .title {

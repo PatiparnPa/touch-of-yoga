@@ -10,13 +10,10 @@ export default function BrandAm() {
             <div className={styles.BrandAm}>
                 <div className={styles.BrandAmHeader}>
                     <div className={styles.BrandAmTopic}>
-                        Meet Our Brand Ambassadors
+                        Our Brand Ambassadors
                     </div>
                     <Link href="/" className={styles.viewAll}>View all</Link>
                 </div>
-                <p className={styles.text}>
-                    Lorem ipsum dolor sit amet consectetur. Bibendum mi et non tellus rutrum. Nascetur erat mus tellus odio morbi et. Urna quis ultrices massa at 
-                </p>
                 <div className={styles.BrandAmPersonList}>
                     {brandImages.map((src, index) => (
                         <div key={index} className={styles.BrandAmPerson}>

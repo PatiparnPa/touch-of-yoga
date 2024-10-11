@@ -1,6 +1,6 @@
 .footer {
     background: white;
-    padding-top: 48px;
+    padding-top: 36px;
     margin: 0 250px; /* เพิ่มระยะห่างจากขอบจอ 250px */
     max-width: calc(100% - 500px); /* ใช้ความกว้างที่คำนวณ */
 }
@@ -10,7 +10,7 @@
     justify-content: space-between;
     max-width: 100%; /* ใช้ max-width แทน */
     margin: 0;
-    padding: 12px;
+    padding: 6px;
     box-shadow: none;
 }
 
@@ -24,7 +24,7 @@
 
 .footer a {
     text-decoration: none;
-    padding: 10px;
+    padding: 4px;
 }
 
 .linkBold {

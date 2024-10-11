@@ -8,12 +8,14 @@
     display: flex; /* ใช้ Flexbox สำหรับจัดเรียงหัวข้อ */
     justify-content: space-between; /* จัดให้หัวข้ออยู่ซ้ายและ View all อยู่ขวา */
     align-items: center; /* ให้อยู่กลางแนวตั้ง */
-    padding: 48px 250px 24px 250px; /* เพิ่ม padding ซ้ายขวา */
+    padding-inline: 200px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     background: #D9DEDC;
 }
 
 .BrandAmTopic {
-    color: #3B757F;
+    color: #6C6C6C;
     font-size: 48px;
     font-weight: bold;
 }
