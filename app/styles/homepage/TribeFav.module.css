@@ -1,7 +1,8 @@
 .tribeFav {
     display: flex;
     flex-direction: column;
-    padding: 0px 250px 24px 250px; /* เพิ่ม padding ซ้ายขวา */
+    padding-inline: 200px;
+    margin-bottom: 16px;
 }
 
 .tribeFavHeader {
@@ -31,6 +32,7 @@
     overflow-x: hidden; /* ไม่ให้แสดง scrollbar */
     gap: 20px; /* ช่องว่างระหว่างสินค้า */
     align-items: center; /* Align items vertically */
+    font-family: 'Quicksand', sans-serif;
 }
 
 .productItem {
@@ -43,8 +45,11 @@
 
 .productImage {
     width: 100%; /* ใช้ 100% ของ container */
-    height: auto; /* ให้รักษาสัดส่วน */
+    height: 200px; /* Specify the desired height */
+    object-fit: cover; /* Crop the image to fit the container */
+    object-position: center; /* Focus on the center of the image */
 }
+
 
 .productItem:hover .productImage {
     transform: scale(1.05); /* ขยายเมื่อ hover */
@@ -60,7 +65,7 @@
     display: flex;
     justify-content: space-between; /* Space out the buttons */
     align-items: center; /* Center the buttons vertically */
-    transform: translateY(-50%); /* ย้ายขึ้นมาให้อยู่กึ่งกลาง */
+    transform: translateY(-100%); /* ย้ายขึ้นมาให้อยู่กึ่งกลาง */
     z-index: 1; /* ให้อยู่เหนือรายการสินค้า */
 }
 
