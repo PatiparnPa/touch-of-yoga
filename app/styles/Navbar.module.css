@@ -45,7 +45,7 @@
     display: flex; /* ใช้ flexbox เพื่อจัดการ layout */
     justify-content: center; /* จัดตำแหน่งให้อยู่กลาง */
     align-items: center; /* จัดให้มีการจัดแนวแนวตั้ง */
-    height: 50px; /* ความสูงของแถวที่ 2 และ 3 */
+    height: 40px; /* ความสูงของแถวที่ 2 และ 3 */
     font-size: 24px; /* ขนาดฟอนต์ */
 }
 
