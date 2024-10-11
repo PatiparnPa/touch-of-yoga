@@ -55,7 +55,7 @@ export default function Perspective() {
                                 src={filteredArticles[0].image}
                                 alt={filteredArticles[0].title}
                                 width={200}
-                                height={300}
+                                height={200}
                                 className={styles.articleImage}
                             />
                             <div className={styles.articleText}>
@@ -70,7 +70,7 @@ export default function Perspective() {
                                 src={filteredArticles[1].image}
                                 alt={filteredArticles[1].title}
                                 width={200}
-                                height={300}
+                                height={200}
                                 className={styles.articleImage}
                             />
                             <div className={styles.articleText}>
@@ -88,8 +88,8 @@ export default function Perspective() {
                             <Image
                                 src={filteredArticles[2].image}
                                 alt={filteredArticles[2].title}
-                                width={528.89}
-                                height={628.89} // ปรับให้ยาวขึ้น
+                                width={428.89}
+                                height={428.89} // ปรับให้ยาวขึ้น
                                 className={styles.articleImage}
                             />
                             <div className={styles.articleText}>
@@ -107,8 +107,8 @@ export default function Perspective() {
                             <Image
                                 src={filteredArticles[0].image}
                                 alt={filteredArticles[0].title}
-                                width={200}
-                                height={300}
+                                width={300}
+                                height={200}
                                 className={styles.articleImage}
                             />
                             <div className={styles.articleText}>
@@ -122,8 +122,8 @@ export default function Perspective() {
                             <Image
                                 src={filteredArticles[1].image}
                                 alt={filteredArticles[1].title}
-                                width={200}
-                                height={300}
+                                width={300}
+                                height={200}
                                 className={styles.articleImage}
                             />
                             <div className={styles.articleText}>
@@ -142,8 +142,8 @@ export default function Perspective() {
                             <Image
                                 src={filteredArticles[3].image}
                                 alt={filteredArticles[3].title}
-                                width={300}
-                                height={300}
+                                width={200}
+                                height={200}
                                 className={styles.articleImage}
                             />
                             <div className={styles.articleText}>
@@ -157,8 +157,8 @@ export default function Perspective() {
                             <Image
                                 src={filteredArticles[4].image}
                                 alt={filteredArticles[4].title}
-                                width={300}
-                                height={300}
+                                width={200}
+                                height={200}
                                 className={styles.articleImage}
                             />
                             <div className={styles.articleText}>
