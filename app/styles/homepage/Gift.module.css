@@ -2,7 +2,7 @@
     display: flex;
     gap: 20px;
     /* ช่องว่างระหว่างคอลัมน์ */
-    padding: 50px;
+    padding: 20px;
     /* Add padding for spacing */
     margin-left: 200px;
 }
@@ -15,11 +15,13 @@
 .giftParagragh {
     color: #708395;
     font-size: 16px;
+    font-family: 'Century', serif; 
 }
 
 .giftVocher a {
     color: #3B757F;
     font-size: 16px;
+    font-family: 'Century', serif; 
 }
 
 
