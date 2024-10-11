@@ -4,7 +4,8 @@
     /* ช่องว่างระหว่างคอลัมน์ */
     padding: 20px;
     /* Add padding for spacing */
-    margin-left: 200px;
+    padding-inline: 200px
+
 }
 
 .giftTopic {
@@ -27,12 +28,15 @@
 
 .giftLeftCol {
     flex: 1;
+    justify-content: center;
 }
 
 .giftRightCol {
     flex: 1;
     display: flex;
     gap: 20px;
+    justify-content: right;
+
     /* ช่องว่างระหว่างรูป */
 }
 
