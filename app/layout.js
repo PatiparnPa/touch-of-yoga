@@ -26,7 +26,6 @@ export default function RootLayout({ children }) {
           <link rel="icon" href="/images/favicon.png" type="image/png" />
               <Navbar />
               <main>{children}</main>
-              <Footer />
           </body>
       </html>
   );
