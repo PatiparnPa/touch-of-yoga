@@ -1,6 +1,6 @@
 .testimonial {
     text-align: center;
-    padding: 24px 0px 24px 0px
+    padding: 12px 0px 12px 0px
 }
 
 .testimonial h2{
@@ -44,7 +44,7 @@
 .testimonialContent {
     background-color: #f5f5f5;
     border-radius: 15px;
-    padding: 1.5rem;
+    padding: 0px 8px 0px 8px;
     min-height: 250px; /* กำหนดความสูงคงที่ */
     width: 800px; /* ขนาดคงที่สำหรับกล่องข้อความ */
     display: flex;
@@ -52,7 +52,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0 20px; /* เพิ่ม margin ซ้าย-ขวา ให้เป็นที่แน่นอน */
+    margin: 4px 20px; /* เพิ่ม margin ซ้าย-ขวา ให้เป็นที่แน่นอน */
 }
 
 .mainReview {
@@ -71,9 +71,13 @@
     padding: 0 1rem; /* เพิ่ม padding เพื่อป้องกันข้อความชนขอบ */
 }
 
+.reviewText p{
+    margin: 36px 0px 16px 0px;
+}
+
 .rating {
     font-size: 1.5rem;
-    margin: 1rem 0;
+    margin: 0;
     white-space: nowrap; /* ป้องกันการตัดบรรทัด */
     color: rgb(241, 213, 0);
 }
