@@ -1,11 +1,11 @@
 .footer {
     background: white;
-    padding-top: 36px;
+    padding-top: 24px;
     margin: 0 250px; /* เพิ่มระยะห่างจากขอบจอ 250px */
     max-width: calc(100% - 500px); /* ใช้ความกว้างที่คำนวณ */
 }
 
-.footerRow1, .footerRow2 {
+.footerRow1{
     display: flex;
     justify-content: space-between;
     max-width: 100%; /* ใช้ max-width แทน */
@@ -14,12 +14,22 @@
     box-shadow: none;
 }
 
+.footerRow2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns vertically */
+    max-width: 100%;
+    margin: 0;
+    padding: 6px;
+    box-shadow: none;
+}
+
 .footColumn {
     display: flex;
-    flex-direction: column; /* จัดแนวเป็นคอลัมน์ */
-    margin: 0; /* ลบ margin ที่เคยมี */
-    flex: 1; /* ให้แต่ละคอลัมน์มีความกว้างเท่ากัน */
-    padding: 0 20px; /* เพิ่มระยะห่างซ้ายขวาให้แต่ละคอลัมน์ */
+    flex-direction: column;
+    margin: 0;
+    flex: 1;
+    padding: 0 20px;
 }
 
 .footer a {
@@ -37,11 +47,30 @@
     font-size: 16px; /* ขนาดฟอนต์ใหญ่ */
     font-weight: normal; /* ฟอนต์หนา */
     color: black; /* สีฟอนต์ */
+    margin-left: 20px;
 }
 
 .footerLine {
     height: 0.1px; /* Thickness of the line */
     background-color: #C8C8C8; /* Color of the line */
     width: 100%; /* Full width */
-    margin: auto; /* Spacing above and below the line */
+    margin: 20px; /* Spacing above and below the line */
+}
+
+.socialIcons {
+    display: flex;
+    gap: 20px; /* Space between icons */
+}
+
+.icon {
+    font-size: 24px; /* Size of the icons */
+    color: black; /* Icon color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    flex-shrink: 0; /* Prevent the icons from shrinking */
+    width: 24px; /* Set a fixed width for the icon */
+    height: 24px; /* Set a fixed height for the icon */
+}
+
+.icon:hover {
+    color: #C8C8C8; /* Change icon color on hover */
 }
