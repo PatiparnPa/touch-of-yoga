@@ -138,11 +138,13 @@
     font-size: 16px; /* ขนาดฟอนต์ใหญ่ */
     font-weight: bold; /* ฟอนต์หนา */
     color:black; /* สีฟอนต์ */
+    margin-left: 20px;
   }
   .linkText {
     font-size: 16px; /* ขนาดฟอนต์ใหญ่ */
     font-weight: normal; /* ฟอนต์หนา */
     color:black; /* สีฟอนต์ */
+    margin-left: 40px;
   }
   
   

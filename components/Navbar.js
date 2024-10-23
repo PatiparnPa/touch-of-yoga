@@ -60,35 +60,40 @@ export default function Navbar() {
                             <div className={"dropColumn"}>
                                 <Link href="/about/journey" className={styles.linkTopic}>Our Journey</Link>
                                 <Link href="/about/brand" className={styles.linkBold}>Our Brand</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>Harmony</Link>
+                                <Link href="/about/harmony" className={styles.linkText}>Our Story</Link>
                                 <Link href="/about/mission" className={styles.linkText}>Our Mission</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Passion Crafted</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Our Passion</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Our Business</Link>
+                                <Link href="/about/harmony" className={styles.linkText}>Our Intentions</Link>
+                                <Link href="/about/mission" className={styles.linkText}>Our Ethical Choices</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Our Heritage</Link>
                             </div>
                             <div className={"dropColumn"}>
                                 <Link href="/about/journey" className={styles.linkTopic}>Our Philosophy</Link>
                                 <Link href="/about/brand" className={styles.linkBold}>Real Jewelry</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>Shiny Deception</Link>
-                                <Link href="/about/mission" className={styles.linkText}>True Value</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Mindful Concept</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Yoga Inspired</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Whispers of Hope</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Our Legacy</Link>
+                                <Link href="/about/brand" className={styles.linkText}>Real Jewelry</Link>
+                                <Link href="/about/harmony" className={styles.linkText}>Mental Jewelry</Link>
+                                <Link href="/about/harmony" className={styles.linkText}>Yoga Jewelry</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Real Yoga</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Yoga Teacher</Link>
                             </div>
                             <div className={"dropColumn"}>
                                 <Link href="/about/journey" className={styles.linkTopic}>Our Team</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Our Artisans</Link>
                                 <Link href="/about/harmony" className={styles.linkText}>Diversity</Link>
                                 <Link href="/about/mission" className={styles.linkText}>Behind the craft</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Our Skillful Partner</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Artisan Community</Link>
+                                <Link href="/about/mission" className={styles.linkText}>Artisan's Community</Link>
+                                <Link href="/about/mission" className={styles.linkText}>Supporting Local Talent</Link>
                                 <Link href="/about/brand" className={styles.linkBold}>Our Founder</Link>
                             </div>
                             <div className={"dropColumn"}>
                                 <Link href="/about/journey" className={styles.linkTopic}>Sustainability</Link>
                                 <Link href="/about/mission" className={styles.linkText}>Environment</Link>
-                                <Link href="/about/mission" className={styles.linkText}>Giving Back to the community</Link>
-                                <Link href="/about/mission" className={styles.linkText}>Giving Back to the society</Link>
+                                <Link href="/about/mission" className={styles.linkText}>Giving Back to the Community</Link>
+                                <Link href="/about/mission" className={styles.linkText}>Giving Back to the Society</Link>
 
                             </div>
-                            {/* เพิ่มลิงค์เพิ่มเติมที่นี่ */}
                         </div>
                     )}
                 </div>
@@ -155,12 +160,6 @@ export default function Navbar() {
                                 <Link href="/about/brand" className={styles.linkBold}>Best Selling Under $300</Link>
 
                             </div>
-                            <div className={"dropColumn"}>
-                                <Link href="/about/journey" className={styles.linkTopic}>Promotion</Link>
-                            </div>
-                            <div className={"dropColumn"}>
-                                <Link href="/about/journey" className={styles.linkTopic}>Best Selling</Link>
-                            </div>
                             {/* เพิ่มลิงค์เพิ่มเติมที่นี่ */}
                         </div>
                     )}
@@ -178,38 +177,43 @@ export default function Navbar() {
                     {collectionDropdown && (
                         <div className={styles.fullDropdown}>
                             <div className={"dropColumn"}>
-                                <Link href="/about/brand" className={styles.linkBold}>Mental (Female)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Mental (Male)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Asana (Female)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Asana (Male)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Yoga Teacher (Female)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Yoga Teacher (Male)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Symbol of Yoga (Female)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Symbol of Yoga (Male)</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Mental</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Mental Gift for Her</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Mental Gift for Him</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Personalize Mental Gift</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Asana</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Yoga Teacher</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
                             </div>
                             <div className={"dropColumn"}>
-                                <Link href="/about/brand" className={styles.linkBold}>Enlightened One (Female)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Enlightened One (Male)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Amor Fati (Female)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Amor Fati (Male)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Evil Eyes (Female)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Evil Eyes (Male)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Protection (Female)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Protection (Male)</Link>
+                            <Link href="/about/brand" className={styles.linkBold}>Symbol of Yoga</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Protection</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Enlightened One</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
                             </div>
                             <div className={"dropColumn"}>
-                            <Link href="/about/brand" className={styles.linkBold}>Personalized (Female)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Personalized (Male)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Meditation (Female)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Meditation (Male)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Imperfect (Female)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Imperfect (Male)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Hug & Kiss (Female)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Hug & Kiss (Male)</Link>
+                            <Link href="/about/brand" className={styles.linkBold}>Meditation</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Imperfect</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Evil Eyes</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
+                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
                             </div>
                             <div className={"dropColumn"}>
                             <Link href="/about/brand" className={styles.linkBold}>Chanthaburi Gems (Female)</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Birth Mouth Flowers (Male)</Link>
                             </div>
                         </div>
                     )}
@@ -227,27 +231,20 @@ export default function Navbar() {
                     {giftDropdown && (
                         <div className={styles.fullDropdown}>
                             <div className={"dropColumn"}>
-                                <Link href="/about/brand" className={styles.linkBold}>Gift for her</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>Touching Gift (under $100)</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>Touching Gift (under $200)</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>Touching Gift (under $300)</Link>
-                                <Link href="/about/mission" className={styles.linkText}>Gift set</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Personalized for her</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>Her initial</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>Astrological Birth FLower</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Gift for</Link>
+                                <Link href="/about/harmony" className={styles.linkText}>For Him</Link>
+                                <Link href="/about/harmony" className={styles.linkText}>For Her</Link>
+                                <Link href="/about/mission" className={styles.linkBold}>Gift set</Link>
                             </div>
                             <div className={"dropColumn"}>
-                                <Link href="/about/brand" className={styles.linkBold}>Gift for him</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>Touching Gift (under $100)</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>Touching Gift (under $200)</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>Touching Gift (under $300)</Link>
-                                <Link href="/about/mission" className={styles.linkText}>Gift set</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Personalized for him</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>His initial</Link>
+                                <Link href="/about/brand" className={styles.linkBold}>Personalized</Link>
+                                <Link href="/about/harmony" className={styles.linkText}>Initial</Link>
+                                <Link href="/about/harmony" className={styles.linkText}>Engravable</Link>
+                                <Link href="/about/harmony" className={styles.linkText}>Birth Month Flowers</Link>
                             </div>
                             <div className={"dropColumn"}>
+                                <Link href="/about/brand" className={styles.linkBold}>Subscription Gift Set</Link>
                                 <Link href="/about/brand" className={styles.linkBold}>Gift Voucher</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Mistery Subscription Box</Link>
                             </div>
                         </div>
                     )}
@@ -262,14 +259,6 @@ export default function Navbar() {
                     onMouseLeave={() => setComingSoonDropdown(false)}
                 >
                     <Link href="/coming-soon">Coming soon</Link>
-                    {comingSoonDropdown && (
-                        <div className={styles.fullDropdown}>
-                         <div className={"dropColumn"}>
-                                <Link href="/about/brand" className={styles.linkBold}>Collaboration</Link>
-                                <Link href="/about/brand" className={styles.linkText}>Special Design</Link>
-                            </div>
-                        </div>
-                    )}
                 </div>
             </div>
         </nav>
