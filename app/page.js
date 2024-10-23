@@ -14,6 +14,7 @@ import Event from "@/components/homepage/Event";
 import Banner from "@/components/homepage/Banner";
 import BrandAm from "@/components/homepage/BrandAm";
 import TribeYogi from "@/components/homepage/TribeYogi";
+import DefaultFooter from "@/components/DefaultFooter";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <BrandAm />
       <Testimonial />
       <SendEmail />
+      <DefaultFooter />
     </>
   );
 }
