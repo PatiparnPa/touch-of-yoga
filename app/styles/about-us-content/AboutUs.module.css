@@ -105,6 +105,8 @@ text-decoration: underline;
     font-size: 24px;
 }
 
+
+/******************Font*******************************/
 .content .fairText {
     font-family: 'Playfair Display', serif;
 
@@ -123,6 +125,31 @@ text-decoration: underline;
 
 }
 
+.content .fairItalicBigCenter {
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.fairCenterText {
+    text-align: center;
+}
+
+.content .arialText {
+    font-family: 'Arial', sans-serif;
+}
+
+.content .arialBoldText {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+
+
+/******************Center**************/
 .content .centerText {
     text-align: center;
     font-family: 'Century', serif;
@@ -153,6 +180,13 @@ text-decoration: underline;
     text-indent: 40px;
 }
 
+.italicNormal {
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 .italicText {
     margin: 48px 0px 24px 0px;
     font-size: 24px;

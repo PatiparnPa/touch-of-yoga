@@ -83,31 +83,6 @@ export default function OurEthical() {
                 <div className={styles.divide}></div>
 
 
-
-
-
-
-
-
-{/*indent
-                <div className={styles.divide}></div>
-
-                <div className={styles.underlineBoldTopic}>Global Impact:</div>
-                <p><span className={styles.fairBoldBigText}></span></p>
-                <p className={styles.indent}><span className={styles.fairBoldBigText}></span></p>
-                <div className={styles.divide}></div>
-
-
-                <div className={styles.leftImageTextContainer}>
-                    <Image
-                        src="/images/about/our-ethical/our-ethical2.jpg"
-                        width={500}
-                        height={450}
-                        className={styles.image}
-                    />
-                </div>
-                */} 
-
             </div>
             <DefaultFooter />
         </>
