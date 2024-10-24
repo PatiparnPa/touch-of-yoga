@@ -6,11 +6,11 @@ export default function SizeGuide() {
     return (
         <>
             <div className={styles.topic}>
-                <h1>FINDING YOUR RING SIZE</h1>
+                <h2>FINDING YOUR RING SIZE</h2>
             </div>
 
             <div className={styles.content}>
-                <h2>Method One: Use Your Existing Ring</h2>
+                <h1>Method One: Use Your Existing Ring</h1>
                 <p><span className={styles.boldText}>Select a Ring that Fits the Intended Finger:</span> Start by choosing a ring that the person already wears comfortably on the same finger where the new ring will be worn. This will ensure a perfect fit for everyday wear.</p>
 
                 <div className={styles.leftImageTextContainer}>
@@ -28,7 +28,7 @@ export default function SizeGuide() {
 
                 <div className={styles.divide}></div>
 
-                <h2>Method Two: Measure Your Finger</h2>
+                <h1>Method Two: Measure Your Finger</h1>
                 <p>You will need piece of string, a ruler, a pen.</p>
                 <p><span className={styles.boldText}>Refer to the Sizing Chart to Find the Right Size:</span> Wrap a piece of string, paper, or just any non-elastic strip loosely around the base of your finger where you want to wear the ring. It should be tight enough to stay in place but loose enough to be comfortable.</p>
                 <p><span className={styles.boldText}>Mark the Overlapping Point with a Pen:</span> Once the string or paper is wrapped around your finger, use a pen or marker to mark the exact point where the two ends of the string meet. This will show you the circumference of your finger.</p>
@@ -61,7 +61,7 @@ export default function SizeGuide() {
 
                 <div className={styles.bigspace}></div>
 
-                <h2>How to Secretly Find the Perfect Ring Size for your love one.</h2>
+                <h1>How to Secretly Find the Perfect Ring Size for your love one.</h1>
                 <div className={styles.leftImageTextContainer}>
                     <Image
                         src="/images/footer-content/size-guide/size-guide4.jpg" // Update with your image path
@@ -75,7 +75,7 @@ export default function SizeGuide() {
                 <div className={styles.divide}></div>
 
                 <div className={styles.indentContent}>
-                    <h2>Borrow a Ring They Already Own</h2>
+                    <h1>Borrow a Ring They Already Own</h1>
                     <ul className={styles.discList}>
                         <li><span className={styles.boldText}>Use a Ring They Wear on the Same Finger:</span> You could always borrow one of their rings that they already wear on the finger you aim to buy. This is the most accurate way to determine their size.</li>
                         <li><span className={styles.boldText}>Trace or Measure:</span> If you don't have a chance to take the ring to a jeweler, draw around the inside of the ring on a piece of paper or measure the diameter with a ruler in millimeters.</li>
@@ -83,7 +83,7 @@ export default function SizeGuide() {
                 </div>
 
                 <div className={styles.indentContent}>
-                    <h2>Guess Based on Common Sizes</h2>
+                    <h1>Guess Based on Common Sizes</h1>
                     <ul className={styles.discList}>
                         <li><span className={styles.boldText}>Average Ring Sizes:</span> For women, the average ring size is 6-7 (US); for men, it's 9-10 (US). If you're unsure, choose a size within this range and make sure the ring is resizable.</li>
                         <li><span className={styles.boldText}>Consider Their Build:</span> Smaller or more petite persons may have smaller ring sizes, while those with larger hands may need a bigger size.</li>
@@ -91,7 +91,7 @@ export default function SizeGuide() {
                 </div>
 
                 <div className={styles.indentContent}>
-                    <h2>USEFUL TIPS</h2>
+                    <h1>USEFUL TIPS</h1>
                     <ul className={styles.circleList}>
                         <li>If the ring band is wider that 3.5 mm, go for the bigger size. If the band is smaller than 3.5 mm, then choose the smaller ring size. </li>
                         <li>If your ring size falls between two sizes, we suggest going one size up rather than going a size down. For some people, hands tend to swell a bit during the day, so sizing up ensures that the ring fits comfortably on your finger.</li>
