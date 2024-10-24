@@ -1,0 +1,85 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #4a4a4a;
+}
+
+/* แถวที่มีรูปใหญ่ 1 รูปและรูปเล็ก 3 รูป */
+.row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr; /* ปรับขนาดของรูปใหญ่และรูปเล็ก */
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.rowReverse {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* ให้แต่ละแถวมี 4 คอลัมน์ */
+    gap: 20px;
+}
+
+.largeItem {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.largeItem:hover {
+    transform: scale(1.02);
+}
+
+.squre {
+    display: flexb;
+}
+.smallItem {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.smallItem:hover {
+    transform: scale(1.05);
+}
+
+.smallItem img,
+.largeItem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}

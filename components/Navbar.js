@@ -177,43 +177,43 @@ export default function Navbar() {
                     {collectionDropdown && (
                         <div className={styles.fullDropdown}>
                             <div className={"dropColumn"}>
-                                <Link href="/about/brand" className={styles.linkBold}>Mental</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Mental Gift for Her</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Mental Gift for Him</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Personalize Mental Gift</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Asana</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Yoga Teacher</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
+                                <Link href="/collection" className={styles.linkBold}>Mental</Link>
+                                <Link href="/collection" className={styles.linkText}>Female</Link>
+                                <Link href="/collection" className={styles.linkText}>Male</Link>
+                                <Link href="/collection" className={styles.linkText}>Mental Gift for Her</Link>
+                                <Link href="/collection" className={styles.linkText}>Mental Gift for Him</Link>
+                                <Link href="/collection" className={styles.linkText}>Personalize Mental Gift</Link>
+                                <Link href="/collection" className={styles.linkBold}>Asana</Link>
+                                <Link href="/collection" className={styles.linkText}>Female</Link>
+                                <Link href="/collection" className={styles.linkText}>Male</Link>
+                                <Link href="/collection" className={styles.linkBold}>Yoga Teacher</Link>
+                                <Link href="/collection" className={styles.linkText}>Female</Link>
+                                <Link href="/collection" className={styles.linkText}>Male</Link>
                             </div>
                             <div className={"dropColumn"}>
-                            <Link href="/about/brand" className={styles.linkBold}>Symbol of Yoga</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Protection</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Enlightened One</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
+                            <Link href="/collection" className={styles.linkBold}>Symbol of Yoga</Link>
+                                <Link href="/collection" className={styles.linkText}>Female</Link>
+                                <Link href="/collection" className={styles.linkText}>Male</Link>
+                                <Link href="/collection" className={styles.linkBold}>Protection</Link>
+                                <Link href="/collection" className={styles.linkText}>Female</Link>
+                                <Link href="/collection" className={styles.linkText}>Male</Link>
+                                <Link href="/collection" className={styles.linkBold}>Enlightened One</Link>
+                                <Link href="/collection" className={styles.linkText}>Female</Link>
+                                <Link href="/collection" className={styles.linkText}>Male</Link>
                             </div>
                             <div className={"dropColumn"}>
-                            <Link href="/about/brand" className={styles.linkBold}>Meditation</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Imperfect</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Evil Eyes</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Female</Link>
-                                <Link href="/about/passion" className={styles.linkText}>Male</Link>
+                            <Link href="/collection" className={styles.linkBold}>Meditation</Link>
+                                <Link href="/collection" className={styles.linkText}>Female</Link>
+                                <Link href="/collection" className={styles.linkText}>Male</Link>
+                                <Link href="/collection" className={styles.linkBold}>Imperfect</Link>
+                                <Link href="/collection" className={styles.linkText}>Female</Link>
+                                <Link href="/collection" className={styles.linkText}>Male</Link>
+                                <Link href="/collection" className={styles.linkBold}>Evil Eyes</Link>
+                                <Link href="/collection" className={styles.linkText}>Female</Link>
+                                <Link href="/collection" className={styles.linkText}>Male</Link>
                             </div>
                             <div className={"dropColumn"}>
-                            <Link href="/about/brand" className={styles.linkBold}>Chanthaburi Gems (Female)</Link>
+                            <Link href="/collection" className={styles.linkBold}>Chanthaburi Gems (Female)</Link>
                             </div>
                         </div>
                     )}
