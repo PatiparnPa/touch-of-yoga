@@ -3,7 +3,7 @@ import styles from '/app/styles/about-us-content/AboutUs.module.css';
 import Image from "next/image";
 
 
-export default function SizeGuide() {
+export default function OurMission() {
     return (
         <>
             <div className={styles.topic}>
