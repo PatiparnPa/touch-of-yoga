@@ -10,10 +10,10 @@ export default function Footer() {
             
             <div className={styles.footerRow1}>
                 <div className={styles.footColumn}>
-                    <Link href="/about/brand" className={styles.linkBold}>Size Guide</Link>
+                    <Link href="/footer/size-guide" className={styles.linkBold}>Size Guide</Link>
                     <Link href="/about/brand" className={styles.linkBold}>Jewelry Care</Link>
                     <Link href="/about/brand" className={styles.linkBold}>Service</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Warranty</Link>
+                    <Link href="/footer/warranty" className={styles.linkBold}>Warranty</Link>
                 </div>
                 <div className={styles.footColumn}>
                     <Link href="/about/brand" className={styles.linkBold}>Stocklist</Link>
@@ -33,8 +33,8 @@ export default function Footer() {
                 <div className={styles.footColumn}>
                     <Link href="/about/brand" className={styles.linkBold}>Contact Us</Link>
                     <Link href="/about/brand" className={styles.linkBold}>FAQ</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Privacy Policy</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Terms & Conditions</Link>
+                    <Link href="/footer/privacy-policy" className={styles.linkBold}>Privacy Policy</Link>
+                    <Link href="/footer/terms-of-service" className={styles.linkBold}>Terms & Conditions</Link>
                     <Link href="/about/brand" className={styles.linkBold}>Shipping & Return</Link>
                 </div>
             </div>
