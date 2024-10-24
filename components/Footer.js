@@ -11,7 +11,7 @@ export default function Footer() {
             <div className={styles.footerRow1}>
                 <div className={styles.footColumn}>
                     <Link href="/footer/size-guide" className={styles.linkBold}>Size Guide</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Jewelry Care</Link>
+                    <Link href="/footer/jewelry-care" className={styles.linkBold}>Jewelry Care</Link>
                     <Link href="/about/brand" className={styles.linkBold}>Service</Link>
                     <Link href="/footer/warranty" className={styles.linkBold}>Warranty</Link>
                 </div>
