@@ -77,6 +77,31 @@ text-decoration: underline;
     font-size: 24px;
 }
 
+.content .fairBoldText {
+    font-family: 'Playfair Display', serif;
+
+}
+
+.content .fairBoldText {
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.content .centerText {
+    text-align: center;
+    font-family: 'Century', serif;
+
+}
+
+.content .centerBoldText {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+
+}
+
 .redBoldText { 
     font-weight: bold;
     font-size: 20px;
