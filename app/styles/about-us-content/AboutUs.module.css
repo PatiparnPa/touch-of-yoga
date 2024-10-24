@@ -36,6 +36,12 @@
 
 }
 
+.content .underlineBoldTopic {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .content h1 {
     /*refer to 16px*/
     margin-top: 72px;
@@ -120,7 +126,12 @@ text-decoration: underline;
 .content .centerText {
     text-align: center;
     font-family: 'Century', serif;
+}
 
+.centerAllText {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .content .centerBoldText {
