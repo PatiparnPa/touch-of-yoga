@@ -2,8 +2,6 @@ import DefaultFooter from '@/components/DefaultFooter';
 import styles from '/app/styles/about-us-content/AboutUs.module.css';
 import Image from "next/image";
 
-/*<a href="https://www.shecodes.io/">click here</a>*/
-
 export default function SizeGuide() {
     return (
         <>
@@ -37,9 +35,9 @@ export default function SizeGuide() {
                     />
                 </div>
 
-                <p class={styles.centerText}>TouchofYoga collections are waiting for you.<br></br>
+                <p className={styles.centerText}>TouchofYoga collections are waiting for you.<br></br>
                     Explore, discover, and express yourself.</p>
-                <p class={styles.centerBoldText}>Welcome to a world of yoga jewelry designed with meaning in mind.</p>
+                <p className={styles.centerBoldText}>Welcome to a world of yoga jewelry designed with meaning in mind.</p>
 
 
             </div>

@@ -2,8 +2,6 @@ import DefaultFooter from '@/components/DefaultFooter';
 import styles from '/app/styles/about-us-content/AboutUs.module.css';
 import Image from "next/image";
 
-/*<a href="https://www.shecodes.io/">click here</a>*/
-
 export default function SizeGuide() {
     return (
         <>

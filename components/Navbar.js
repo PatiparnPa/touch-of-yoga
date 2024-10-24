@@ -61,7 +61,7 @@ export default function Navbar() {
                                 <Link href="/about/journey" className={styles.linkTopic}>Our Journey</Link>
                                 <Link href="/about/brand" className={styles.linkBold}>Our Brand</Link>
                                 <Link href="/about/our-story" className={styles.linkText}>Our Story</Link>
-                                <Link href="/about/mission" className={styles.linkText}>Our Mission</Link>
+                                <Link href="/about/our-mission" className={styles.linkText}>Our Mission</Link>
                                 <Link href="/about/our-passion" className={styles.linkText}>Our Passion</Link>
                                 <Link href="/about/brand" className={styles.linkBold}>Our Business</Link>
                                 <Link href="/about/harmony" className={styles.linkText}>Our Intentions</Link>

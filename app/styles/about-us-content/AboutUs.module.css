@@ -29,6 +29,13 @@
     padding-inline:450px;
 }
 
+.content h0{
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 72px;
+
+}
+
 .content h1 {
     /*refer to 16px*/
     margin-top: 72px;
@@ -62,6 +69,21 @@
     margin-bottom: 12px;
 }
 
+.content .nospace h1{
+    font-family: 'Century', serif;
+    margin-bottom: 12px;
+}
+
+.content .nospace h2{
+    font-family: 'Century', serif;
+    margin-bottom: 12px;
+}
+
+.content .nospace p{
+    font-family: 'Century', serif;
+    margin-bottom: 12px;
+}
+
 .content .boldText { /*Use for span*/
     font-weight: bold;
 
@@ -77,13 +99,20 @@ text-decoration: underline;
     font-size: 24px;
 }
 
-.content .fairBoldText {
+.content .fairText {
     font-family: 'Playfair Display', serif;
 
 }
 
 .content .fairBoldText {
     font-weight: bold;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.content .fairBoldBigText {
+    font-weight: bold;
+    font-size: 26px;
     font-family: 'Playfair Display', serif;
 
 }
