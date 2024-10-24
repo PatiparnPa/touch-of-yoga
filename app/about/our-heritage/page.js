@@ -3,7 +3,7 @@ import styles from '/app/styles/about-us-content/AboutUs.module.css';
 import Image from "next/image";
 
 
-export default function OurEthical() {
+export default function OurHeritage() {
     return (
         <>
             <div className={styles.topic}>
@@ -76,31 +76,6 @@ export default function OurEthical() {
                 <div className={styles.fairCenterText}>
                     <p className={styles.fairBoldBigText}>Discover the elegant balance between luxury and wellness while you practice on a journey of self-discovery with TouchofYoga.</p>
                     </div>
-
-
-
-
-
-                {/*indent
-                <div className={styles.divide}></div>
-
-                <div className={styles.underlineBoldTopic}>Global Impact:</div>
-                <p></p>
-                <p><span className={styles.fairBoldBigText}></span></p>
-                <p className={styles.indent}><span className={styles.fairBoldBigText}></span></p>
-
-                <div className={styles.divide}></div>
-
-
-                <div className={styles.leftImageTextContainer}>
-                    <Image
-                        src="/images/about/our-ethical/our-ethical2.jpg"
-                        width={500}
-                        height={450}
-                        className={styles.image}
-                    />
-                </div>
-                */}
 
             </div>
             <DefaultFooter />

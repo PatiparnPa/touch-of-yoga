@@ -105,6 +105,11 @@ text-decoration: underline;
     font-size: 24px;
 }
 
+.content .boldTextBigBig { /*Use for span*/
+    font-weight: bold;
+    font-size: 26px;
+}
+
 
 /******************Font*******************************/
 .content .fairText {
@@ -191,6 +196,7 @@ text-decoration: underline;
     margin: 48px 0px 24px 0px;
     font-size: 24px;
     text-align: center;
+    
 }
 
 .italicTextBold {
@@ -198,6 +204,12 @@ text-decoration: underline;
     font-size: 28px;
     font-weight: bold;
     text-align: center;
+}
+
+.italicBold {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 

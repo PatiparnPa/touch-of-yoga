@@ -85,7 +85,7 @@ export default function Navbar() {
                                 <Link href="/about/brand" className={styles.linkBold}>Artisan Community</Link>
                                 <Link href="/about/mission" className={styles.linkText}>Artisan's Community</Link>
                                 <Link href="/about/mission" className={styles.linkText}>Supporting Local Talent</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Our Founder</Link>
+                                <Link href="/about/our-founder" className={styles.linkBold}>Our Founder</Link>
                             </div>
                             <div className={"dropColumn"}>
                                 <Link href="/about/journey" className={styles.linkTopic}>Sustainability</Link>
