@@ -27,7 +27,7 @@ export default function Footer() {
                     <Link href="/about/brand" className={styles.linkBold}>Sustainability</Link>
                     <Link href="/about/brand" className={styles.linkBold}>Need to know</Link>
                     <Link href="/footer/fake-jewelry" className={styles.linkText}>Spot Fake Jewelry</Link>
-                    <Link href="/about/harmony" className={styles.linkText}>Handmade Jewelry</Link>
+                    <Link href="/footer/handmade-jewelry" className={styles.linkText}>Handmade Jewelry</Link>
                     <Link href="/about/brand" className={styles.linkBold}>Join our community</Link>
                 </div>
                 <div className={styles.footColumn}>
