@@ -31,7 +31,7 @@
 
 .content h1 {
     /*refer to 16px*/
-    margin-top: 48px;
+    margin-top: 72px;
     font-size: 26px;
 }
 
@@ -50,6 +50,10 @@
     font-family: 'Century', serif;
     font-size: 20px;
     margin-bottom: 48px;
+}
+
+.content a{
+    color: blue;
 }
 
 .content .nospace {

@@ -32,7 +32,7 @@ export default function Footer() {
                 </div>
                 <div className={styles.footColumn}>
                     <Link href="/about/brand" className={styles.linkBold}>Contact Us</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>FAQ</Link>
+                    <Link href="/footer/faqs" className={styles.linkBold}>FAQ</Link>
                     <Link href="/footer/privacy-policy" className={styles.linkBold}>Privacy Policy</Link>
                     <Link href="/footer/terms-of-service" className={styles.linkBold}>Terms & Conditions</Link>
                     <Link href="/about/brand" className={styles.linkBold}>Shipping & Return</Link>
