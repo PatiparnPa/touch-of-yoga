@@ -1,0 +1,280 @@
+/*****Topic*****/
+.topic {
+    text-align: center;
+    margin: 64px 0px
+}
+
+.topic h1 {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.topic h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.topic h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.topic p {
+    font-family: 'Century', serif;
+    font-size: 20px;
+}
+
+/******Content******/
+.content {
+    padding-inline:450px;
+}
+
+.content h1 {
+    /*refer to 16px*/
+    margin-top: 72px;
+    font-size: 26px;
+}
+
+.content h2 {
+    /*refer to 14px*/
+    font-size: 24px;
+}
+
+.content h3 {
+    /*refer to 12px*/
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.content p {
+    font-family: 'Century', serif;
+    font-size: 20px;
+    margin-bottom: 48px;
+}
+
+.content a{
+    color: blue;
+}
+
+.content .nospace {
+    font-family: 'Century', serif;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.content .boldText { /*Use for span*/
+    font-weight: bold;
+
+}
+
+.content .underlineBoldText { /*Use for span*/
+    font-weight: bold;
+text-decoration: underline;
+}
+
+.content .boldTextBig { /*Use for span*/
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.redBoldText { 
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+    text-indent: 40px;
+}
+
+.content .indent {
+    text-indent: 40px;
+}
+
+.italicText {
+    margin: 48px 0px 24px 0px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.italicTextBold {
+    margin: 100px 0px 24px 0px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.bottom {
+    text-align: center;
+    margin: 96px 0px 24px 0px;
+
+}
+
+.bottomText {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Century', serif;
+}
+
+.bottomGreen {
+    text-align: center;
+    margin: 96px 0px 24px 0px;
+
+}
+
+.bottomTextGray{
+    font-size: 20px;
+    color: gray;
+    font-family: 'Century', serif;
+}
+
+.bottomTextGreen {
+    font-size: 20px;
+    font-family: 'Century', serif;
+    color: #007f5f;
+}
+
+/************************bullet*************************/
+
+
+.discList {
+    list-style-type: disc;
+    /* Default black bullet */
+    margin-left: 20px;
+}
+
+.discList li {
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-family: 'Century', serif;
+}
+
+.circleList {
+    list-style-type: circle;
+    /* Default black bullet */
+    margin-left: 20px;
+}
+
+.circleList li {
+    padding-bottom: 24px;
+    font-size: 20px;
+    font-family: 'Century', serif;
+}
+
+.decimalList {
+    list-style-type: decimal;
+    ;
+    /* Default black bullet */
+    margin-left: 20px;
+}
+
+.decimalList li {
+    padding-bottom: 24px;
+    font-size: 20px;
+    font-family: 'Century', serif;
+}
+
+.decimalSpan {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.decimalList p {
+    margin-bottom: 24px;
+}
+
+.slashList {
+    list-style-type: "-   ";
+    /* Removes default bullet or numbering */
+    margin-left: 10px;
+}
+
+.slashList li {
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-family: 'Century', serif;
+}
+
+.slashUnderList {
+    list-style-type: none;
+    /* Removes default bullet or numbering */
+    padding-left: 0;
+    /* Optional: Aligns the text and bullet properly */
+}
+
+.slashUnderList li {
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-family: 'Century', serif;
+}
+
+.slashUnderList li::before {
+    content: "-  ";
+    /* Adds a dash before each list item */
+    color: black;
+    /* You can change the color of the dash if needed */
+    margin-right: 5px;
+    /* Adds space between the dash and text */
+}
+
+
+/************************** Image Zone Ja******************************/
+.centerImageContainer {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    height: 100%;
+    /* Make sure the container has a height */
+    text-align: center;
+    /* Center text inside the container */
+    margin: 0px 0px 48px 0px;
+}
+
+.centerImage {
+    max-width: 100%;
+}
+
+/********************************Left*************************************/
+.leftImageTextContainer {
+    margin: 24px 0;
+}
+
+.leftImageTextContainer .image {
+    float: left;
+    margin-right: 2rem;
+    object-fit: cover;
+    /* This ensures the image is cropped while maintaining aspect ratio */
+    image-rendering: crisp-edges;
+    /* For preserving quality during resizing in modern browsers */
+}
+
+/********************************Right*************************************/
+.rightImageTextContainer {
+    margin: 24px 0;
+}
+
+.rightImageTextContainer .image {
+    float: right;
+    margin-left: 1rem;
+    object-fit: cover;
+    /* This ensures the image is cropped while maintaining aspect ratio */
+    image-rendering: crisp-edges;
+    /* For preserving quality during resizing in modern browsers */
+}
+
+.divide {
+    clear: both;
+    margin-bottom: 48px;
+}
+
+
+
+/**************************Space********************************/
+.bigspace {
+    margin: 120px;
+}
+
+.indentContent {
+    margin-left: 40px;
+    /* Indent bullets */
+}
