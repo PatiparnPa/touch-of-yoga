@@ -21,7 +21,7 @@
 
 /******Content******/
 .content {
-    padding-inline: 250px;
+    padding-inline:450px;
 }
 
 .content h1 {
@@ -139,6 +139,15 @@
     font-family: 'Century', serif;
 }
 
+.decimalSpan {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.decimalList p {
+    margin-bottom: 24px;
+}
+
 .slashList {
     list-style-type: "-   ";
     /* Removes default bullet or numbering */
@@ -199,7 +208,7 @@
 
 .leftImageTextContainer .image {
     float: left;
-    margin-right: 1rem;
+    margin-right: 2rem;
     object-fit: cover;
     /* This ensures the image is cropped while maintaining aspect ratio */
     image-rendering: crisp-edges;
