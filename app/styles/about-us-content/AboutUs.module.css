@@ -4,17 +4,17 @@
     margin: 64px 0px
 }
 
-.topic h1 {
+.topic h1 {     /*refer to 38px*/
     font-size: 46px;
     font-weight: bold;
 }
 
-.topic h2 {
+.topic h2 {    /*refer to 28px*/
     font-size: 36px;
     font-weight: bold;
 }
 
-.topic h3 {
+.topic h3 {    /*refer to 24px*/
     font-size: 32px;
     font-weight: bold;
 }
