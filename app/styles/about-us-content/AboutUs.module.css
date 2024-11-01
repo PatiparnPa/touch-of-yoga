@@ -19,6 +19,11 @@
     font-weight: bold;
 }
 
+.topic .H3 {    /*refer to 24px and not bold*/ 
+    font-size: 32px;
+}
+
+
 .topic p {
     font-family: 'Century', serif;
     font-size: 20px;
@@ -63,6 +68,11 @@
     font-family: 'Century', serif;
     font-size: 20px;
     margin-bottom: 48px;
+}
+
+.rightText {
+    text-align: right;
+    font-size: 20px;
 }
 
 .content a{
@@ -114,7 +124,11 @@ text-decoration: underline;
 /******************Font*******************************/
 .content .fairText {
     font-family: 'Playfair Display', serif;
+}
 
+.content .fairMediumText {
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
 }
 
 .content .fairBoldText {
