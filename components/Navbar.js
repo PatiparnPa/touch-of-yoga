@@ -81,7 +81,7 @@ export default function Navbar() {
                                 <Link href="/about/journey" className={styles.linkTopic}>Our Team</Link>
                                 <Link href="/about/brand" className={styles.linkBold}>Our Artisans</Link>
                                 <Link href="/about/harmony" className={styles.linkText}>Diversity</Link>
-                                <Link href="/about/mission" className={styles.linkText}>Behind the craft</Link>
+                                <Link href="/about/behind-the-crafts" className={styles.linkText}>Behind the craft</Link>
                                 <Link href="/about/brand" className={styles.linkBold}>Artisan Community</Link>
                                 <Link href="/about/mission" className={styles.linkText}>Artisan's Community</Link>
                                 <Link href="/about/mission" className={styles.linkText}>Supporting Local Talent</Link>

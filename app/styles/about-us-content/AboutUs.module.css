@@ -41,6 +41,11 @@
 
 }
 
+.content .h01{
+    font-size: 34px;
+    font-weight: bold;
+}
+
 .content .underlineBoldTopic {
     font-size: 32px;
     font-weight: bold;
