@@ -67,11 +67,11 @@ export default function YogaJewelry() {
                     />
                 </div>
                 <p className={styles.indent}>Let's explore deeper into true core of yoga together, embracing its powerful teachings and principles. It will open up its transformational potential for personal growth, well-being, and empower our communities to make a difference towards creating a better world.</p>
-<div className={styles.fairCenterText }>
-    <p className={styles.fairBoldText}>Join us in exploring and practicing the whole range of yoga,<br></br>
-Not only the physical but also to create a complete and mindful life.
-</p>
-</div>
+                <div className={styles.fairCenterText}>
+                    <p className={styles.fairBoldText}>Join us in exploring and practicing the whole range of yoga,<br></br>
+                        Not only the physical but also to create a complete and mindful life.
+                    </p>
+                </div>
             </div>
 
 
