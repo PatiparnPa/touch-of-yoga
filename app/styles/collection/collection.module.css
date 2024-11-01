@@ -27,15 +27,29 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* ให้แต่ละแถวมี 4 คอลัมน์ */
+    grid-template-rows: repeat(11, auto); /* ให้แถวมีความสูงตามเนื้อหา */
+    grid-template-columns: repeat(3, 1fr); /* ให้แต่ละแถวมี 4 คอลัมน์ */
     gap: 20px;
+
+}
+.gridSubCollection {
+    display: grid;
+    grid-template-rows: repeat(3, auto); /* ให้แถวมีความสูงตามเนื้อหา */
+    grid-template-columns: repeat(3, 1fr); /* ให้แต่ละแถวมี 4 คอลัมน์ */
+    gap: 20px;
+
 }
 
 .largeItem {
     overflow: hidden;
+    position: relative;
+    grid-column: span 3;
+    grid-row: span 1;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    width: 100%;
+    height: 300px;
 }
 
 .largeItem:hover {
@@ -43,15 +57,46 @@
 }
 
 .squre {
-    display: flexb;
+    display: flex;
 }
 .smallItem {
+    position: relative;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     cursor: pointer;
+    width: 100%;
+    height: 400px;
 }
+.typeText {
+    font-size: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+.seeAllText {
+    color: black;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    text-decoration: underline;
+}
+.seeAllText:visited {
+    color: black;
+}
+
+.seeAllText:hover {
+    color: blue;
+}
+
+
 
 .smallItem:hover {
     transform: scale(1.05);
@@ -63,6 +108,17 @@
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.imageText {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
 }
 
 .item {
