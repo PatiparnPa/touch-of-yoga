@@ -2,7 +2,7 @@ import DefaultFooter from '@/components/DefaultFooter';
 import styles from '/app/styles/about-us-content/AboutUs.module.css';
 import Image from "next/image";
 
-export default function OurFounder() {
+export default function YogaJewelry() {
     return (
         <>
             <div className={styles.topic}>

@@ -123,6 +123,13 @@ text-decoration: underline;
 
 }
 
+.content .fairBoldMediumText {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+
+}
+
 .content .fairBoldBigText {
     font-weight: bold;
     font-size: 26px;

@@ -71,9 +71,9 @@ export default function Navbar() {
                             <div className={"dropColumn"}>
                                 <Link href="/about/journey" className={styles.linkTopic}>Our Philosophy</Link>
                                 <Link href="/about/brand" className={styles.linkBold}>Real Jewelry</Link>
-                                <Link href="/about/brand" className={styles.linkText}>Real Jewelry</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>Mental Jewelry</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>Yoga Jewelry</Link>
+                                <Link href="/about/real-jewelry" className={styles.linkText}>Real Jewelry</Link>
+                                <Link href="/about/mental-jewelry" className={styles.linkText}>Mental Jewelry</Link>
+                                <Link href="/about/yoga-jewelry" className={styles.linkText}>Yoga Jewelry</Link>
                                 <Link href="/about/brand" className={styles.linkBold}>Real Yoga</Link>
                                 <Link href="/about/brand" className={styles.linkBold}>Yoga Teacher</Link>
                             </div>
