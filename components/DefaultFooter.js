@@ -11,32 +11,33 @@ export default function DefaultFooter() {
             <div className={styles.footerRow1}>
                 <div className={styles.footColumn}>
                     <Link href="/about/่journey" className={styles.linkTopic}>Special Feature</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Changeable lock</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Value added</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Personalize</Link>
+                    <Link href="/footer/special-features" className={styles.linkBold}>Special Feature</Link>
+                    <Link href="/footer/intricate-details" className={styles.linkBold}>Intricate details</Link>
+                    <Link href="/footer/perosnalized" className={styles.linkBold}>Personalize</Link>
                 </div>
                 <div className={styles.footColumn}>
                     <Link href="/about/journey" className={styles.linkTopic}>Our Material</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Metal</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Gold vermeil</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Natural gemstones</Link>
-                    <Link href="/about/harmony" className={styles.linkBold}>Thai-mined Gems</Link>
+                    <Link href="/footer/metal" className={styles.linkBold}>Metal</Link>
+                    <Link href="/footer/gold-vermeil" className={styles.linkBold}>Gold vermeil</Link>
+                    <Link href="/footer/natural-gemstones" className={styles.linkBold}>Natural gemstones</Link>
+                    <Link href="/footer/harmony" className={styles.linkBold}>Thai-mined Gems</Link>
+                    <Link href="/footer/a-land-of-gemstone-treasures" className={styles.linkText}>A Land of Gemstone Treasures</Link>
+                    <Link href="/footer/thai-gems-why-so-special" className={styles.linkText}>Thai Gems Why So Special</Link>
                 </div>
                 <div className={styles.footColumn}>
                     <Link href="/about/journey" className={styles.linkTopic}>Our Design Concept</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>The reasons behind</Link>
-                    <Link href="/about/harmony" className={styles.linkText}>Wearable Messages</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Yoga Jewelry</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Yoga Teacher Jewelry</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Mental Health Jewelry</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Our design process</Link>
+                    <Link href="/footer/real-design" className={styles.linkBold}>Real Design</Link>
+                    <Link href="/footer/yoga-jewelry" className={styles.linkBold}>Yoga Jewelry</Link>
+                    <Link href="/footer/yoga-teacher-jewelry" className={styles.linkBold}>Yoga Teacher Jewelry</Link>
+                    <Link href="/footer/mental-health-jewelry" className={styles.linkBold}>Mental Health Jewelry</Link>
+                    <Link href="/footer/our-design-process" className={styles.linkBold}>Our design process</Link>
 
                 </div>
                 <div className={styles.footColumn}>
                     <Link href="/about/journey" className={styles.linkTopic}>Our Crafting Process</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>The Journey of Fine Jewelry</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Handmade</Link>
-                    <Link href="/about/brand" className={styles.linkBold}>Direct to customer</Link>
+                    <Link href="/footer/the-journey-of-fine-jewelry" className={styles.linkBold}>The Journey of Fine Jewelry</Link>
+                    <Link href="/footer/handmade" className={styles.linkBold}>Handmade</Link>
+                    <Link href="/footer/direct-to-customer" className={styles.linkBold}>Direct to customer</Link>
                 </div>
             </div>
 
@@ -50,20 +51,14 @@ export default function DefaultFooter() {
                 </div>
                 {/* Social Media Icons */}
                 <div className={styles.socialIcons}>
-                    <Link href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <Link href="https://www.facebook.com/touchofyoga.jewelry/" target="_blank" aria-label="Facebook">
                         <FontAwesomeIcon icon={faFacebook} className={styles.icon} />
                     </Link>
-                    <Link href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <Link href="https://www.instagram.com/touchofyoga.jewelry/" target="_blank" aria-label="Instagram">
                         <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
                     </Link>
-                    <Link href="https://pinterest.com" target="_blank" aria-label="Pinterest">
+                    <Link href="https://www.pinterest.com/touchofyogajewelry/" target="_blank" aria-label="Pinterest">
                         <FontAwesomeIcon icon={faPinterest} className={styles.icon} />
-                    </Link>
-                    <Link href="https://youtube.com" target="_blank" aria-label="YouTube">
-                        <FontAwesomeIcon icon={faYoutube} className={styles.icon} />
-                    </Link>
-                    <Link href="https://tiktok.com" target="_blank" aria-label="TikTok">
-                        <FontAwesomeIcon icon={faTiktok} className={styles.icon} />
                     </Link>
                 </div>
             </div>

@@ -58,19 +58,19 @@ export default function Navbar() {
                     {aboutDropdown && (
                         <div className={styles.fullDropdown}>
                             <div className={"dropColumn"}>
-                                <Link href="/about/journey" className={styles.linkTopic}>Our Journey</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Our Brand</Link>
+                                <div className={styles.linkTopic}>Our Journey</div>
+                                <div className={styles.linkBold}>Our Brand</div>
                                 <Link href="/about/our-story" className={styles.linkText}>Our Story</Link>
                                 <Link href="/about/our-mission" className={styles.linkText}>Our Mission</Link>
                                 <Link href="/about/our-passion" className={styles.linkText}>Our Passion</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Our Business</Link>
+                                <div className={styles.linkBold}>Our Business</div>
                                 <Link href="/about/our-intention" className={styles.linkText}>Our Intentions</Link>
                                 <Link href="/about/our-ethical" className={styles.linkText}>Our Ethical Choices</Link>
                                 <Link href="/about/our-heritage" className={styles.linkText}>Our Heritage</Link>
                             </div>
                             <div className={"dropColumn"}>
-                                <Link href="/about/journey" className={styles.linkTopic}>Our Philosophy</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Real Jewelry</Link>
+                                <div lassName={styles.linkTopic}>Our Philosophy</div>
+                                <div className={styles.linkBold}>Real Jewelry</div>
                                 <Link href="/about/real-jewelry" className={styles.linkText}>Real Jewelry</Link>
                                 <Link href="/about/mental-jewelry" className={styles.linkText}>Mental Jewelry</Link>
                                 <Link href="/about/yoga-jewelry" className={styles.linkText}>Yoga Jewelry</Link>
@@ -78,22 +78,16 @@ export default function Navbar() {
                                 <Link href="/about/yoga-teacher" className={styles.linkBold}>Yoga Teacher</Link>
                             </div>
                             <div className={"dropColumn"}>
-                                <Link href="/about/journey" className={styles.linkTopic}>Our Team</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Our Artisans</Link>
-                                <Link href="/about/harmony" className={styles.linkText}>Diversity</Link>
+                                <div className={styles.linkTopic}>Our Team</div>
+                                <div className={styles.linkBold}>Our Artisans</div>
+                                <Link href="/about/diversity" className={styles.linkText}>Diversity</Link>
                                 <Link href="/about/behind-the-crafts" className={styles.linkText}>Behind the craft</Link>
-                                <Link href="/about/brand" className={styles.linkBold}>Artisan Community</Link>
-                                <Link href="/about/mission" className={styles.linkText}>Artisan's Community</Link>
-                                <Link href="/about/mission" className={styles.linkText}>Supporting Local Talent</Link>
+                                <div className={styles.linkBold}>Artisan Community</div>
+                                <Link href="/about/artisans" className={styles.linkText}>Artisan's Community</Link>
+                                <Link href="/about/supporting-local-talent" className={styles.linkText}>Supporting Local Talent</Link>
                                 <Link href="/about/our-founder" className={styles.linkBold}>Our Founder</Link>
                             </div>
-                            <div className={"dropColumn"}>
-                                <Link href="/about/journey" className={styles.linkTopic}>Sustainability</Link>
-                                <Link href="/about/mission" className={styles.linkText}>Environment</Link>
-                                <Link href="/about/mission" className={styles.linkText}>Giving Back to the Community</Link>
-                                <Link href="/about/mission" className={styles.linkText}>Giving Back to the Society</Link>
-
-                            </div>
+                            
                         </div>
                     )}
                 </div>
