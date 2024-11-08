@@ -59,16 +59,19 @@
 
 .secondRow,
 .thirdRow {
-    display: flex;
-    /* ใช้ flexbox เพื่อจัดการ layout */
-    justify-content: center;
-    /* จัดตำแหน่งให้อยู่กลาง */
+    display: block;
+    position: relative;
+    /* display: flex;
     align-items: center;
-    /* จัดให้มีการจัดแนวแนวตั้ง */
+    justify-content: center; */
     height: 40px;
     /* ความสูงของแถวที่ 2 และ 3 */
+    text-align: center ;
     font-size: 24px;
     /* ขนาดฟอนต์ */
+}
+.dropdown {
+    position: relative;
 }
 
 /* แถวที่ 2 */
@@ -100,41 +103,49 @@
 /* เพิ่มระยะห่างระหว่างเมนู */
 .secondRow span,
 .thirdRow span {
-    margin: 0 66px;
+    margin: 0 20px;
     /* เพิ่มระยะห่างระหว่างลิงค์ */
 }
 
 .dropdownContainer {
-    position: relative;
-    /* ใช้สำหรับวางตำแหน่ง dropdown */
+    cursor: pointer;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #333;
 }
 
 .fullDropdown {
-    display: none;
     /* ซ่อน dropdown โดยเริ่มต้น */
-    position: fixed;
-    /* ใช้ fixed เพื่อให้ dropdown แสดงเต็มหน้าจอ */
-    top: auto;
+    position: absolute;
+    top: 100%; /* ติดด้านบนกับเมนู */
     left: 0;
+    right: 0;
     /* จัดให้ตรงกับเมนู */
     background-color: white;
     /* พื้นหลังของ dropdown แบบโปร่งใส */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    /* เงาให้กับ dropdown */
+
+    /* เพิ่ม padding เพื่อไม่ให้ชิดขอบ */
+    background-color: white;
+    /* สีพื้นหลังสำหรับ dropdown */
+    border: 1px solid #ccc;
+    /* เพิ่มเส้นขอบถ้าต้องการ */
+
     width: 100vw;
     /* ทำให้กว้างเท่ากับหน้าจอ */
     max-height: calc(100vh - 140px);
     /* จำกัดความสูงของ dropdown ไม่ให้เกินความสูงของหน้าจอ */
     z-index: 1000;
     /* ทำให้ dropdown แสดงด้านหน้า */
-    padding: 20px;
+    padding: 40px;
     /* เพิ่ม padding ให้ dropdown */
-    display: grid;
+}
+.fullDropdownContent {
+    display: flex;
     /* ใช้ grid layout */
-    grid-template-columns: repeat(4, 1fr);
-    /* 4 column */
-    overflow-y: auto;
-    /* ทำให้เลื่อนลงได้หากเนื้อหามาก */
+    justify-content: center;
+    text-align: left;
+
 }
 
 .currency:hover .fullDropdown {
@@ -147,18 +158,7 @@
     /* เพิ่ม padding ในแต่ละ column */
 }
 
-.fullDropdown {
-    max-width: auto;
-    /* ตั้งค่าความกว้างสูงสุดของ dropdown */
-    padding: 24px 0px 48px 100px;
-    /* เพิ่ม padding เพื่อไม่ให้ชิดขอบ */
-    background-color: white;
-    /* สีพื้นหลังสำหรับ dropdown */
-    border: 1px solid #ccc;
-    /* เพิ่มเส้นขอบถ้าต้องการ */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* เพิ่มเงาให้กับ dropdown */
-}
+
 
 
 /* ลิงก์ใน dropdown */
@@ -179,9 +179,9 @@
 }
 
 .dropColumn {
-    margin: 0;
+    margin-inline: 60px;
     /* ปรับ margin ให้เป็น 0 เพื่อไม่ให้มีพื้นที่ระหว่างคอลัมน์ */
-    padding: 10px;
+    padding: 0px;
     /* ปรับ padding ตามต้องการ */
 }
 
