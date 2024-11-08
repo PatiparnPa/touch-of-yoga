@@ -87,64 +87,64 @@ export default function Navbar() {
               <div className={styles.dropColumn}>
                 <div className={styles.linkTopic}>Our Journey</div>
                 <div className={styles.linkBold}>Our Brand</div>
-                <Link href="/about/our-story" className={styles.linkText}>
+                <Link href="/about/our-story" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Our Story
                 </Link>
-                <Link href="/about/our-mission" className={styles.linkText}>
+                <Link href="/about/our-mission" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Our Mission
                 </Link>
-                <Link href="/about/our-passion" className={styles.linkText}>
+                <Link href="/about/our-passion" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Our Passion
                 </Link>
                 <div className={styles.linkBold}>Our Business</div>
-                <Link href="/about/our-intention" className={styles.linkText}>
+                <Link href="/about/our-intention" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Our Intentions
                 </Link>
-                <Link href="/about/our-ethical" className={styles.linkText}>
+                <Link href="/about/our-ethical" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Our Ethical Choices
                 </Link>
-                <Link href="/about/our-heritage" className={styles.linkText}>
+                <Link href="/about/our-heritage" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Our Heritage
                 </Link>
               </div>
               <div className={styles.dropColumn}>
                 <div className={styles.linkTopic}>Our Philosophy</div>
                 <div className={styles.linkBold}>Real Jewelry</div>
-                <Link href="/about/real-jewelry" className={styles.linkText}>
+                <Link href="/about/real-jewelry" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Real Jewelry
                 </Link>
-                <Link href="/about/mental-jewelry" className={styles.linkText}>
+                <Link href="/about/mental-jewelry" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Mental Jewelry
                 </Link>
-                <Link href="/about/yoga-jewelry" className={styles.linkText}>
+                <Link href="/about/yoga-jewelry" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Yoga Jewelry
                 </Link>
-                <Link href="/about/real-yoga" className={styles.linkBold}>
+                <Link href="/about/real-yoga" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Real Yoga
                 </Link>
-                <Link href="/about/yoga-teacher" className={styles.linkBold}>
+                <Link href="/about/yoga-teacher" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Yoga Teacher
                 </Link>
               </div>
               <div className={styles.dropColumn}>
                 <div className={styles.linkTopic}>Our Team</div>
                 <div className={styles.linkBold}>Our Artisans</div>
-                <Link href="/about/diversity" className={styles.linkText}>
+                <Link href="/about/diversity" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Diversity
                 </Link>
                 <Link
                   href="/about/behind-the-crafts"
-                  className={styles.linkText}
+                  className={styles.linkText} onClick={() => setAboutDropdown(false)}
                 >
                   Behind the craft
                 </Link>
                 <div className={styles.linkBold}>Artisan Community</div>
-                <Link href="/about/artisans" className={styles.linkText}>
+                <Link href="/about/artisans" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Artisan's Community
                 </Link>
                 <Link
                   href="/about/supporting-local-talent"
-                  className={styles.linkText}
+                  className={styles.linkText} onClick={() => setAboutDropdown(false)}
                 >
                   Supporting Local Talent
                 </Link>
@@ -157,15 +157,15 @@ export default function Navbar() {
         )}
 
         <span>|</span>
-        <span className={styles.dropdownContainer}>
+        <span className={styles.dropdownContainer} onClick={() => setAboutDropdown(false)}>
           <Link href="/perspective">Perspective</Link> {/* ไม่มี Dropdown */}
         </span>
         <span>|</span>
-        <span className={styles.dropdownContainer}>
+        <span className={styles.dropdownContainer} onClick={() => setAboutDropdown(false)}>
           <Link href="/partners">Our Partners</Link> {/* ไม่มี Dropdown */}
         </span>
         <span>|</span>
-        <span className={styles.dropdownContainer}>
+        <span className={styles.dropdownContainer} onClick={() => setAboutDropdown(false)}>
           <Link href="/community">Join our Community</Link>{" "}
           {/* ไม่มี Dropdown */}
         </span>
@@ -193,102 +193,102 @@ export default function Navbar() {
           >
             <div className={styles.fullDropdownContent}>
               <div className={styles.dropColumn}>
-                <Link href="/about/journey" className={styles.linkTopic}>
+                <Link href="/coming-soon" className={styles.linkTopic} onClick={() => setAboutDropdown(false)}>
                   Women
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   All Earring
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   All Pendant
                 </Link>
-                <Link href="/about/harmony" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Charm
                 </Link>
-                <Link href="/about/mission" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Necklace
                 </Link>
-                <Link href="/about/passion" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Chain Clasp, Add on
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   All Ring
                 </Link>
-                <Link href="/about/harmony" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Stackable
                 </Link>
-                <Link href="/about/mission" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Band
                 </Link>
-                <Link href="/about/passion" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Signet
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   All Bracelet & Bangle
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Selected Set items
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Mystery Subscription Box
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Top 10 Most Loved items
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Best Selling Under $100
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Best Selling Under $200
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Best Selling Under $300
                 </Link>
               </div>
               <div className={styles.dropColumn}>
-                <Link href="/about/journey" className={styles.linkTopic}>
+                <Link href="/coming-soon" className={styles.linkTopic} onClick={() => setAboutDropdown(false)}>
                   Men
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   All Ring
                 </Link>
-                <Link href="/about/harmony" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Stackable
                 </Link>
-                <Link href="/about/mission" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Band
                 </Link>
-                <Link href="/about/mission" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Signet
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   All Pendant
                 </Link>
-                <Link href="/about/passion" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Necklace
                 </Link>
-                <Link href="/about/passion" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Chain Clasp, Add on
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   All Bracelet & Bangle
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Selected Set items
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Mystery Subscription Box
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Top 10 Most Loved items
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Best Selling Under $100
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Best Selling Under $200
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Best Selling Under $300
                 </Link>
               </div>
@@ -318,103 +318,103 @@ export default function Navbar() {
           >
             <div className={styles.fullDropdownContent}>
               <div className={styles.dropColumn}>
-                <Link href="/collection" className={styles.linkBold}>
+                <Link href="/collection" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Mental
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Female
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Male
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Mental Gift for Her
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Mental Gift for Him
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Personalize Mental Gift
                 </Link>
-                <Link href="/collection" className={styles.linkBold}>
+                <Link href="/collection" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Asana
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Female
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Male
                 </Link>
-                <Link href="/collection" className={styles.linkBold}>
+                <Link href="/collection" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Yoga Teacher
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Female
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Male
                 </Link>
               </div>
               <div className={styles.dropColumn}>
-                <Link href="/collection" className={styles.linkBold}>
+                <Link href="/collection" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Symbol of Yoga
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Female
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Male
                 </Link>
-                <Link href="/collection" className={styles.linkBold}>
+                <Link href="/collection" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Protection
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Female
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Male
                 </Link>
-                <Link href="/collection" className={styles.linkBold}>
+                <Link href="/collection" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Enlightened One
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Female
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Male
                 </Link>
               </div>
               <div className={styles.dropColumn}>
-                <Link href="/collection" className={styles.linkBold}>
+                <Link href="/collection" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Meditation
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Female
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Male
                 </Link>
-                <Link href="/collection" className={styles.linkBold}>
+                <Link href="/collection" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Imperfect
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Female
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Male
                 </Link>
-                <Link href="/collection" className={styles.linkBold}>
+                <Link href="/collection" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Evil Eyes
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Female
                 </Link>
-                <Link href="/collection" className={styles.linkText}>
+                <Link href="/collection" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Male
                 </Link>
               </div>
               <div className={styles.dropColumn}>
-                <Link href="/collection" className={styles.linkBold}>
+                <Link href="/collection" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Chanthaburi Gems (Female)
                 </Link>
               </div>
@@ -443,38 +443,38 @@ export default function Navbar() {
           >
             <div className={styles.fullDropdownContent}>
               <div className={styles.dropColumn}>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Gift for
                 </Link>
-                <Link href="/about/harmony" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   For Him
                 </Link>
-                <Link href="/about/harmony" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   For Her
                 </Link>
-                <Link href="/about/mission" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Gift set
                 </Link>
               </div>
               <div className={styles.dropColumn}>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Personalized
                 </Link>
-                <Link href="/about/harmony" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Initial
                 </Link>
-                <Link href="/about/harmony" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Engravable
                 </Link>
-                <Link href="/about/harmony" className={styles.linkText}>
+                <Link href="/coming-soon" className={styles.linkText} onClick={() => setAboutDropdown(false)}>
                   Birth Month Flowers
                 </Link>
               </div>
               <div className={styles.dropColumn}>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Subscription Gift Set
                 </Link>
-                <Link href="/about/brand" className={styles.linkBold}>
+                <Link href="/coming-soon" className={styles.linkBold} onClick={() => setAboutDropdown(false)}>
                   Gift Voucher
                 </Link>
               </div>
@@ -490,7 +490,7 @@ export default function Navbar() {
           onMouseEnter={() => setComingSoonDropdown(true)}
           onMouseLeave={() => setComingSoonDropdown(false)}
         >
-          <Link href="/coming-soon">Coming soon</Link>
+          <Link href="/coming-soon" onClick={() => setAboutDropdown(false)}>Coming soon</Link > 
         </span>
       </div>
     </nav>
