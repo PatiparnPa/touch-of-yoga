@@ -69,7 +69,7 @@ export default function Navbar() {
                                 <Link href="/about/our-heritage" className={styles.linkText}>Our Heritage</Link>
                             </div>
                             <div className={"dropColumn"}>
-                                <div lassName={styles.linkTopic}>Our Philosophy</div>
+                                <div className={styles.linkTopic}>Our Philosophy</div>
                                 <div className={styles.linkBold}>Real Jewelry</div>
                                 <Link href="/about/real-jewelry" className={styles.linkText}>Real Jewelry</Link>
                                 <Link href="/about/mental-jewelry" className={styles.linkText}>Mental Jewelry</Link>
@@ -87,7 +87,7 @@ export default function Navbar() {
                                 <Link href="/about/supporting-local-talent" className={styles.linkText}>Supporting Local Talent</Link>
                                 <Link href="/about/our-founder" className={styles.linkBold}>Our Founder</Link>
                             </div>
-                            
+
                         </div>
                     )}
                 </div>
@@ -185,7 +185,7 @@ export default function Navbar() {
                                 <Link href="/collection" className={styles.linkText}>Male</Link>
                             </div>
                             <div className={"dropColumn"}>
-                            <Link href="/collection" className={styles.linkBold}>Symbol of Yoga</Link>
+                                <Link href="/collection" className={styles.linkBold}>Symbol of Yoga</Link>
                                 <Link href="/collection" className={styles.linkText}>Female</Link>
                                 <Link href="/collection" className={styles.linkText}>Male</Link>
                                 <Link href="/collection" className={styles.linkBold}>Protection</Link>
@@ -196,7 +196,7 @@ export default function Navbar() {
                                 <Link href="/collection" className={styles.linkText}>Male</Link>
                             </div>
                             <div className={"dropColumn"}>
-                            <Link href="/collection" className={styles.linkBold}>Meditation</Link>
+                                <Link href="/collection" className={styles.linkBold}>Meditation</Link>
                                 <Link href="/collection" className={styles.linkText}>Female</Link>
                                 <Link href="/collection" className={styles.linkText}>Male</Link>
                                 <Link href="/collection" className={styles.linkBold}>Imperfect</Link>
@@ -207,7 +207,7 @@ export default function Navbar() {
                                 <Link href="/collection" className={styles.linkText}>Male</Link>
                             </div>
                             <div className={"dropColumn"}>
-                            <Link href="/collection" className={styles.linkBold}>Chanthaburi Gems (Female)</Link>
+                                <Link href="/collection" className={styles.linkBold}>Chanthaburi Gems (Female)</Link>
                             </div>
                         </div>
                     )}
